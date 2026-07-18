@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Boxel";
+  src: url("/fonts/boxel.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "K2D";
+  src: url("/fonts/K2D-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-boxel: "Boxel", "Courier New", monospace;
+  --font-k2d: "K2D", Arial, sans-serif;
+  --color-ink: #080a0c;
+  --color-gdg-teal: #08a5a5;
+  --color-paper: #f5f2e9;
+}
+
+:root {
+  --font-k2d: "K2D", Arial, sans-serif;
+}
