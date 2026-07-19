@@ -96,7 +96,7 @@ export default function Philosophy() {
           className="flex min-h-[460px] flex-col justify-center rounded-[18px] bg-white/90 p-[clamp(26px,3.5vw,46px)] text-center shadow-[0_18px_60px_rgba(0,0,0,.12)] backdrop-blur-[3px] max-[760px]:min-h-[540px]"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.2 }}
           variants={{
             hidden: { opacity: 0, y: 45 },
             visible: {

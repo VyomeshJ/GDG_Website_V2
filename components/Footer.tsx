@@ -1,4 +1,5 @@
 import Image from "next/image";
+import FadeInContent from "./FadeInContent";
 
 const socialLinks = [
   {
@@ -41,7 +42,7 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="rounded-t-[22px] border-t border-white/25 bg-[#05252d] px-[clamp(22px,5vw,72px)] py-[clamp(18px,2.5vw,28px)] font-k2d text-white shadow-[inset_0_2px_0_rgba(255,255,255,.08)]">
-      <div className="mx-auto flex max-w-[1500px] items-end justify-between gap-10 max-[760px]:flex-col max-[760px]:items-center max-[760px]:text-center">
+      <FadeInContent className="mx-auto flex max-w-[1500px] items-end justify-between gap-10 max-[760px]:flex-col max-[760px]:items-center max-[760px]:text-center">
         <div className="flex flex-col items-start gap-2 max-[760px]:items-center">
           <p className="text-[clamp(15px,1.5vw,22px)] leading-tight font-black">
             Copyright © 2026 UoA Game Developer Guild
@@ -99,7 +100,7 @@ export default function Footer() {
             020 4112 9013
           </a>
         </div>
-      </div>
+      </FadeInContent>
     </footer>
   );
 }

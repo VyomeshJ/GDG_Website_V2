@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { motion, useReducedMotion } from "motion/react";
 
 const faqs = [
   {
@@ -35,6 +38,8 @@ const faqs = [
 ];
 
 export default function Faq() {
+  const reducedMotion = useReducedMotion();
+
   return (
     <section
       data-section="faq"
@@ -56,38 +61,94 @@ export default function Faq() {
       />
 
       <div className="mx-auto max-w-[1450px]">
-        <h2
+        <motion.h2
           id="faq-heading"
           className="mb-[clamp(34px,5vw,64px)] text-center font-boxel text-[clamp(64px,8vw,112px)] leading-[.8] font-black tracking-[-.06em] uppercase"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: reducedMotion ? 0.15 : 0.7 }}
         >
           FAQ
-        </h2>
+        </motion.h2>
 
-        <div className="grid grid-cols-3 items-start gap-[clamp(28px,5vw,76px)] max-[760px]:grid-cols-1 max-[760px]:gap-14">
+        <motion.div
+          className="grid grid-cols-3 items-start gap-[clamp(28px,5vw,76px)] max-[760px]:grid-cols-1 max-[760px]:gap-14"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.25 }}
+          variants={{
+            hidden: {},
+            visible: {
+              transition: {
+                staggerChildren: reducedMotion ? 0 : 0.22,
+              },
+            },
+          }}
+        >
           {faqs.map((faq) => (
-            <article className="text-center" key={faq.question}>
+            <motion.article
+              className="text-center"
+              key={faq.question}
+              variants={{
+                hidden: { opacity: 0 },
+                visible: {
+                  opacity: 1,
+                  transition: { duration: reducedMotion ? 0.15 : 0.7 },
+                },
+              }}
+            >
               <h3 className="mb-5 text-[clamp(24px,2.4vw,34px)] leading-[1.12] font-medium tracking-[-.025em]">
                 {faq.question}
               </h3>
               <p className="mx-auto max-w-[390px] text-[clamp(17px,1.45vw,21px)] leading-[1.45]">
                 {faq.answer}
               </p>
-            </article>
+            </motion.article>
           ))}
-        </div>
+        </motion.div>
 
-        <div className="relative mx-auto mt-[clamp(60px,8vw,100px)] flex h-[clamp(280px,30vw,400px)] max-w-[1200px] items-center justify-between gap-[clamp(18px,3vw,48px)] max-[760px]:mt-16 max-[760px]:h-[230px]">
-          <Image
-            className="pointer-events-none relative z-0 h-auto w-[clamp(110px,15vw,210px)] flex-none max-[760px]:hidden"
-            src="/assets/Socials_Left.png"
-            alt=""
-            width={665}
-            height={664}
-            unoptimized
-            aria-hidden="true"
-          />
+        <motion.div
+          className="relative mx-auto mt-[clamp(60px,8vw,100px)] flex h-[clamp(280px,30vw,400px)] max-w-[1200px] items-center justify-between gap-[clamp(18px,3vw,48px)] max-[760px]:mt-16 max-[760px]:h-[230px]"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
+        >
+          <motion.div
+            className="relative z-0 w-[clamp(110px,15vw,210px)] flex-none max-[760px]:hidden"
+            variants={{
+              hidden: { x: reducedMotion ? 0 : "-55vw", opacity: 0 },
+              visible: {
+                x: 0,
+                opacity: 1,
+                transition: { duration: reducedMotion ? 0.15 : 0.8, ease: "easeOut" },
+              },
+            }}
+          >
+            <Image
+              className="pointer-events-none h-auto w-full"
+              src="/assets/Socials_Left.png"
+              alt=""
+              width={665}
+              height={664}
+              unoptimized
+              aria-hidden="true"
+            />
+          </motion.div>
 
-          <div className="group relative z-10 aspect-[1301/798] w-[min(45vw,520px)] flex-none transition-transform duration-200 ease-out hover:scale-[1.035] focus-within:scale-[1.035] max-[760px]:w-full">
+          <motion.div
+            className="group relative z-10 aspect-[1301/798] w-[min(45vw,520px)] flex-none transition-transform duration-200 ease-out hover:scale-[1.035] focus-within:scale-[1.035] max-[760px]:w-full"
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: {
+                  delay: reducedMotion ? 0 : 0.18,
+                  duration: reducedMotion ? 0.15 : 0.85,
+                },
+              },
+            }}
+          >
             <Image
               className="pointer-events-none absolute inset-0 size-full object-contain"
               src="/assets/Socials.png"
@@ -131,18 +192,30 @@ export default function Faq() {
               rel="noopener noreferrer"
               aria-label="GDG on Facebook"
             />
-          </div>
+          </motion.div>
 
-          <Image
-            className="pointer-events-none relative z-0 h-auto w-[clamp(110px,15vw,210px)] flex-none max-[760px]:hidden"
-            src="/assets/Socials_Right.png"
-            alt=""
-            width={671}
-            height={730}
-            unoptimized
-            aria-hidden="true"
-          />
-        </div>
+          <motion.div
+            className="relative z-0 w-[clamp(110px,15vw,210px)] flex-none max-[760px]:hidden"
+            variants={{
+              hidden: { x: reducedMotion ? 0 : "55vw", opacity: 0 },
+              visible: {
+                x: 0,
+                opacity: 1,
+                transition: { duration: reducedMotion ? 0.15 : 0.8, ease: "easeOut" },
+              },
+            }}
+          >
+            <Image
+              className="pointer-events-none h-auto w-full"
+              src="/assets/Socials_Right.png"
+              alt=""
+              width={671}
+              height={730}
+              unoptimized
+              aria-hidden="true"
+            />
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );
