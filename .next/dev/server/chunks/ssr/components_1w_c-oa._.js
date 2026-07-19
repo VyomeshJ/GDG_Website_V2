@@ -48,6 +48,12 @@ const membershipCards = [
     }
 ];
 function JoinOverlay({ open, onClose }) {
+    membershipCards.forEach((card)=>{
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$dom$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["preload"])(card.image, {
+            as: "image",
+            fetchPriority: "high"
+        });
+    });
     const overlayRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     const closeButtonRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
@@ -103,12 +109,12 @@ function JoinOverlay({ open, onClose }) {
                     children: "×"
                 }, void 0, false, {
                     fileName: "[project]/components/JoinOverlay.tsx",
-                    lineNumber: 112,
+                    lineNumber: 116,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/JoinOverlay.tsx",
-                lineNumber: 105,
+                lineNumber: 109,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -124,7 +130,7 @@ function JoinOverlay({ open, onClose }) {
                             children: "Join the Game Developers Guild"
                         }, void 0, false, {
                             fileName: "[project]/components/JoinOverlay.tsx",
-                            lineNumber: 122,
+                            lineNumber: 126,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -149,12 +155,12 @@ function JoinOverlay({ open, onClose }) {
                                                 "aria-hidden": "true"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/JoinOverlay.tsx",
-                                                lineNumber: 138,
+                                                lineNumber: 142,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/JoinOverlay.tsx",
-                                            lineNumber: 134,
+                                            lineNumber: 138,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -162,18 +168,18 @@ function JoinOverlay({ open, onClose }) {
                                             children: card.title
                                         }, void 0, false, {
                                             fileName: "[project]/components/JoinOverlay.tsx",
-                                            lineNumber: 148,
+                                            lineNumber: 152,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, card.title, true, {
                                     fileName: "[project]/components/JoinOverlay.tsx",
-                                    lineNumber: 126,
+                                    lineNumber: 130,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/JoinOverlay.tsx",
-                            lineNumber: 124,
+                            lineNumber: 128,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -182,14 +188,14 @@ function JoinOverlay({ open, onClose }) {
                                 "Anyone can join, even if you're a grad or non-UoA!",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/components/JoinOverlay.tsx",
-                                    lineNumber: 159,
+                                    lineNumber: 163,
                                     columnNumber: 13
                                 }, this),
                                 "Membership is just $5 per sem~"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/JoinOverlay.tsx",
-                            lineNumber: 157,
+                            lineNumber: 161,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -197,24 +203,24 @@ function JoinOverlay({ open, onClose }) {
                             "aria-hidden": "true"
                         }, void 0, false, {
                             fileName: "[project]/components/JoinOverlay.tsx",
-                            lineNumber: 163,
+                            lineNumber: 167,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/JoinOverlay.tsx",
-                    lineNumber: 116,
+                    lineNumber: 120,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/JoinOverlay.tsx",
-                lineNumber: 115,
+                lineNumber: 119,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/JoinOverlay.tsx",
-        lineNumber: 98,
+        lineNumber: 102,
         columnNumber: 5
     }, this), document.body);
 }

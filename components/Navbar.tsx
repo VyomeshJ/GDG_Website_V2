@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
-const navigation = ["Our story", "Games", "Events", "Tutorials"];
+const navigation = ["Home", "Games", "Events", "Tutorials"];
 
 const sectionFor = (item: string) =>
   item === "Our story" ? "who-we-are" : item.toLowerCase();
@@ -51,9 +52,21 @@ function NavLogo({
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
 
   const navigateTo = (section: string) => {
     setMenuOpen(false);
+
+    if (section === "home") {
+      if (pathname !== "/home") {
+        router.push("/home");
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+      return;
+    }
+
     document
       .querySelector<HTMLElement>(`[data-section="${section}"]`)
       ?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -84,7 +97,7 @@ export default function Navbar() {
       }`}
     >
       <div
-        className={`pointer-events-none absolute inset-x-0 top-0 -z-10 h-[280px] bg-[linear-gradient(to_bottom,rgba(3,5,6,.97)_0%,rgba(3,5,6,.84)_22%,rgba(3,5,6,.62)_42%,rgba(3,5,6,.38)_62%,rgba(3,5,6,.16)_80%,transparent_100%)] transition-opacity duration-300 max-[760px]:h-[220px] ${
+        className={`pointer-events-none absolute inset-x-0 top-0 -z-10 h-[120px] bg-[linear-gradient(to_bottom,rgba(3,5,6,.97)_0%,rgba(3,5,6,.84)_22%,rgba(3,5,6,.62)_42%,rgba(3,5,6,.38)_62%,rgba(3,5,6,.16)_80%,transparent_100%)] transition-opacity duration-300 max-[760px]:h-[220px] ${
           menuOpen ? "opacity-0" : "opacity-100"
         }`}
         aria-hidden="true"
