@@ -58,12 +58,22 @@ export default function Navbar() {
   const navigateTo = (section: string) => {
     setMenuOpen(false);
 
+    if (section === "games") {
+      router.push("/games");
+      return;
+    }
+
     if (section === "home") {
-      if (pathname !== "/home") {
-        router.push("/home");
+      if (pathname !== "/") {
+        router.push("/");
       } else {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
+      return;
+    }
+
+    if (pathname !== "/" && pathname !== "/home") {
+      router.push("/");
       return;
     }
 
