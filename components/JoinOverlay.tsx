@@ -104,7 +104,7 @@ export default function JoinOverlay({
     >
       <button
         ref={closeButtonRef}
-        className="fixed top-4 right-5 z-10 grid size-16 cursor-pointer place-items-center text-7xl leading-none font-black text-white outline-none transition-transform duration-150 hover:scale-110 focus-visible:scale-110 max-[700px]:top-2 max-[700px]:right-2 max-[700px]:size-13 max-[700px]:text-6xl"
+        className="fixed top-4 right-5 z-10 grid size-16 cursor-pointer place-items-center text-7xl leading-none font-black text-white outline-none transition-colors duration-150 hover:text-[#12caca] focus-visible:text-[#12caca] max-[700px]:top-2 max-[700px]:right-2 max-[700px]:size-13 max-[700px]:text-6xl"
         type="button"
         aria-label="Close join information"
         onClick={onClose}

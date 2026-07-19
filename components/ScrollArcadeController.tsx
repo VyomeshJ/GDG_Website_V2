@@ -34,11 +34,11 @@ export default function ScrollArcadeController() {
       aria-label="Arcade joystick connecting to its base"
     >
       <motion.div
-        className="absolute top-[2.6%] left-[29%] z-10 w-[42.13%] will-change-transform"
+        className="absolute top-[2.6%] left-[29%] z-30 w-[42.13%] will-change-transform"
         style={{ y: joystickY }}
       >
         <Image
-          className="block h-auto w-full brightness-0"
+          className="block h-auto w-full"
           src="/assets/arcade-joystick.svg"
           alt=""
           width={83}
@@ -53,7 +53,7 @@ export default function ScrollArcadeController() {
         style={{ y: baseY }}
       >
         <Image
-          className="block h-auto w-full brightness-0"
+          className="block h-auto w-full"
           src="/assets/arcade-base.svg"
           alt=""
           width={197}

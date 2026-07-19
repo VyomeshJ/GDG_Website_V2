@@ -102,7 +102,7 @@ function JoinOverlay({ open, onClose }) {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 ref: closeButtonRef,
-                className: "fixed top-4 right-5 z-10 grid size-16 cursor-pointer place-items-center text-7xl leading-none font-black text-white outline-none transition-transform duration-150 hover:scale-110 focus-visible:scale-110 max-[700px]:top-2 max-[700px]:right-2 max-[700px]:size-13 max-[700px]:text-6xl",
+                className: "fixed top-4 right-5 z-10 grid size-16 cursor-pointer place-items-center text-7xl leading-none font-black text-white outline-none transition-colors duration-150 hover:text-[#12caca] focus-visible:text-[#12caca] max-[700px]:top-2 max-[700px]:right-2 max-[700px]:size-13 max-[700px]:text-6xl",
                 type: "button",
                 "aria-label": "Close join information",
                 onClick: onClose,
@@ -467,7 +467,7 @@ function NavLogo({ mobile = false, onNavigate }) {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 className: `${mobile ? "h-14 w-20" : "h-[67px] w-28"} col-start-1 row-start-1 object-contain opacity-100 drop-shadow-[0_8px_12px_rgba(0,0,0,.75)] transition-opacity duration-100 [transition-timing-function:steps(2)] group-hover:opacity-0 group-focus-visible:opacity-0`,
-                src: "/assets/gdg-vector-logo.svg",
+                src: "/assets/laser-logo.svg",
                 alt: "",
                 width: 112,
                 height: 67,
@@ -771,12 +771,12 @@ function ScrollArcadeController() {
         "aria-label": "Arcade joystick connecting to its base",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
-                className: "absolute top-[2.6%] left-[29%] z-10 w-[42.13%] will-change-transform",
+                className: "absolute top-[2.6%] left-[29%] z-30 w-[42.13%] will-change-transform",
                 style: {
                     y: joystickY
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                    className: "block h-auto w-full brightness-0",
+                    className: "block h-auto w-full",
                     src: "/assets/arcade-joystick.svg",
                     alt: "",
                     width: 83,
@@ -799,7 +799,7 @@ function ScrollArcadeController() {
                     y: baseY
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                    className: "block h-auto w-full brightness-0",
+                    className: "block h-auto w-full",
                     src: "/assets/arcade-base.svg",
                     alt: "",
                     width: 197,

@@ -28,7 +28,7 @@ function NavLogo({
         className={`${
           mobile ? "h-14 w-20" : "h-[67px] w-28"
         } col-start-1 row-start-1 object-contain opacity-100 drop-shadow-[0_8px_12px_rgba(0,0,0,.75)] transition-opacity duration-100 [transition-timing-function:steps(2)] group-hover:opacity-0 group-focus-visible:opacity-0`}
-        src="/assets/gdg-vector-logo.svg"
+        src="/assets/laser-logo.svg"
         alt=""
         width={112}
         height={67}
