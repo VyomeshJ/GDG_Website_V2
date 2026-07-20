@@ -16,11 +16,6 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: true,
       },
-      {
-        source: "/events",
-        destination: "/",
-        permanent: true,
-      },
     ];
   },
 };

@@ -63,6 +63,11 @@ export default function Navbar() {
       return;
     }
 
+    if (section === "events") {
+      router.push("/events");
+      return;
+    }
+
     if (section === "home") {
       if (pathname !== "/") {
         router.push("/");

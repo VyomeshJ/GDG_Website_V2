@@ -66,23 +66,23 @@ export default function GamesCatalog() {
     <>
       <section className="pt-40 relative bg-black px-[clamp(20px,5vw,72px)] py-[clamp(48px,6vw,82px)] text-ink">
         <div className="mx-auto max-w-[1450px]">
-          <div className="mb-10 overflow-hidden rounded-[18px] border-2 border-[#05252d]/15 bg-white shadow-[0_18px_50px_rgba(5,37,45,.1)]">
-            <div className="flex flex-col gap-5 bg-[#05252d] p-[clamp(20px,3vw,34px)] text-white">
+          <div className="mb-10 overflow-hidden rounded-[18px] border-2 border-white/10 bg-[#151515] shadow-[0_18px_50px_rgba(0,0,0,.35)]">
+            <div className="flex flex-col gap-5 bg-[#151515] p-[clamp(20px,3vw,34px)] text-white">
               <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
                 <div>
                   <h2 className="font-boxel text-[clamp(28px,3vw,42px)] leading-none font-black tracking-[-.035em] uppercase">
                     Browse the arcade
                   </h2>
-                  <p className="mt-2 font-k2d text-sm font-bold text-white/60">
+                  <p className="mt-2 font-k2d text-sm font-bold text-white/55">
                     {filteredGames.length} of {games.length} games shown
                   </p>
                 </div>
 
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
-                  <span className="text-sm font-black tracking-[.08em] text-white/60 uppercase">
-                    Sort
+                  <span className="text-sm font-black tracking-[.08em] text-white/55 uppercase">
+                    Sort by
                   </span>
-                  <div className="grid grid-cols-3 rounded-[9px] border border-white/20 bg-black/20 p-1">
+                  <div className="grid grid-cols-3 rounded-[9px] border border-white/15 bg-black/25 p-1">
                     {sortOptions.map((option) => {
                       const selected = sortMode === option.value;
                       return (
@@ -90,7 +90,7 @@ export default function GamesCatalog() {
                           className={`cursor-pointer rounded-[6px] px-3 py-2 text-sm font-black transition-colors sm:min-w-24 ${
                             selected
                               ? "bg-[#12caca] text-[#05252d]"
-                              : "text-white/70 hover:bg-white/10 hover:text-white"
+                              : "text-white/65 hover:bg-white/10 hover:text-white"
                           }`}
                           type="button"
                           aria-pressed={selected}
@@ -105,14 +105,14 @@ export default function GamesCatalog() {
                 </div>
               </div>
 
-              <div className="border-t border-white/15 pt-5">
+              <div className="border-t border-white/12 pt-5">
                 <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
-                  <span className="text-sm font-black tracking-[.08em] text-white/60 uppercase">
+                  <span className="text-sm font-black tracking-[.08em] text-white/55 uppercase">
                     Filter by tags
                   </span>
                   {selectedTags.length > 0 && (
                     <button
-                      className="cursor-pointer rounded-[7px] border border-white/25 px-3 py-1.5 text-sm font-black text-white/75 transition-colors hover:border-[#12caca] hover:text-[#12caca]"
+                      className="cursor-pointer rounded-[7px] border border-white/20 px-3 py-1.5 text-sm font-black text-white/65 transition-colors hover:border-[#12caca] hover:text-[#12caca]"
                       type="button"
                       onClick={() => setSelectedTags([])}
                     >
@@ -128,7 +128,7 @@ export default function GamesCatalog() {
                         className={`cursor-pointer rounded-full border px-3 py-1.5 text-xs font-bold transition-colors ${
                           selected
                             ? "border-[#12caca] bg-[#12caca] text-[#05252d]"
-                            : "border-white/20 bg-white/5 text-white/70 hover:border-[#12caca]/70 hover:text-white"
+                            : "border-white/15 bg-white/5 text-white/65 hover:border-[#12caca]/70 hover:text-white"
                         }`}
                         type="button"
                         aria-pressed={selected}
@@ -148,7 +148,7 @@ export default function GamesCatalog() {
             <div className="grid grid-cols-1 gap-[clamp(20px,2.5vw,34px)] sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {filteredGames.map((game) => (
                 <a
-                  className="group flex min-h-[490px] flex-col overflow-hidden rounded-[16px] border-2 border-[#05252d]/12 bg-white shadow-[0_14px_35px_rgba(5,37,45,.1)] transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-1.5 hover:border-[#12caca] hover:shadow-[0_20px_45px_rgba(18,202,202,.2)] focus-visible:border-[#12caca] focus-visible:outline-none"
+                  className="group flex min-h-[490px] flex-col overflow-hidden rounded-[16px] border-2 border-white/10 bg-[#151515] text-white shadow-[0_14px_35px_rgba(0,0,0,.35)] transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-1.5 hover:border-[#12caca] hover:shadow-[0_20px_45px_rgba(18,202,202,.18)] focus-visible:border-[#12caca] focus-visible:outline-none"
                   href={game.href}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -180,22 +180,22 @@ export default function GamesCatalog() {
                     <h2 className="line-clamp-2 text-[clamp(20px,2vw,27px)] leading-[1.05] font-black tracking-[-.025em]">
                       {game.title}
                     </h2>
-                    <p className="mt-1 truncate text-sm font-bold text-[#087f82]">
+                    <p className="mt-1 truncate text-sm font-bold text-[#12caca]">
                       by {game.author}
                     </p>
-                    <p className="mt-4 line-clamp-3 text-sm leading-[1.5] text-black/62">
+                    <p className="mt-4 line-clamp-3 text-sm leading-[1.5] text-white/60">
                       {game.description || "A game made by a member of the GDG community."}
                     </p>
 
                     <div className="mt-4 flex flex-wrap gap-2">
                       {game.genre && (
-                        <span className="rounded-full bg-[#05252d]/8 px-3 py-1 text-xs font-black text-[#05252d]/70">
+                        <span className="rounded-full bg-white/10 px-3 py-1 text-xs font-black text-white/70">
                           {game.genre}
                         </span>
                       )}
                       {game.tags.slice(0, 3).map((tag) => (
                         <span
-                          className="rounded-full bg-[#12caca]/12 px-3 py-1 text-xs font-bold text-[#087679]"
+                          className="rounded-full bg-[#12caca]/15 px-3 py-1 text-xs font-bold text-[#12caca]"
                           key={tag}
                         >
                           {tag}
@@ -203,7 +203,7 @@ export default function GamesCatalog() {
                       ))}
                     </div>
 
-                    <span className="mt-auto pt-5 text-sm font-black tracking-[.08em] text-[#087f82] uppercase transition-colors group-hover:text-[#05252d]">
+                    <span className="mt-auto pt-5 text-sm font-black tracking-[.08em] text-[#12caca] uppercase transition-colors group-hover:text-white">
                       View game ↗
                     </span>
                   </div>
@@ -211,10 +211,10 @@ export default function GamesCatalog() {
               ))}
             </div>
           ) : (
-            <div className="grid min-h-64 place-items-center rounded-[16px] border-2 border-dashed border-[#05252d]/20 bg-white p-8 text-center">
+            <div className="grid min-h-64 place-items-center rounded-[16px] border-2 border-dashed border-white/20 bg-[#151515] p-8 text-center text-white">
               <div>
                 <h2 className="font-boxel text-3xl uppercase">No games found</h2>
-                <p className="mt-2 text-black/60">Try removing one or more tags.</p>
+                <p className="mt-2 text-white/60">Try removing one or more tags.</p>
               </div>
             </div>
           )}
