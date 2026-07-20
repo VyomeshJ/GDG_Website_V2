@@ -130,7 +130,7 @@ export default async function EventsPage() {
                       timeZone: "Pacific/Auckland",
                     })}, ${endTime}`;
 
-              const cardClassName = `relative m-2 flex h-40 w-[80vw] items-center overflow-hidden rounded-lg bg-[#151515] md:w-[50vw] ${
+              const cardClassName = `relative m-2 flex min-h-[190px] w-[calc(100vw-32px)] items-stretch overflow-hidden rounded-lg bg-[#151515] sm:w-[82vw] md:min-h-40 md:w-[60vw] lg:w-[50vw] ${
                 event.href
                   ? "border-2 border-[#12caca]"
                   : "border-2 border-transparent"
@@ -139,19 +139,19 @@ export default async function EventsPage() {
               const cardContent = (
                 <>
                   <div
-                    className={`flex h-full w-[30%] flex-col justify-center p-4 md:w-[20%] ${
+                    className={`flex w-[28%] min-w-[88px] max-w-[116px] shrink-0 flex-col items-center justify-center px-2 py-4 md:w-[20%] md:max-w-none md:px-4 ${
                       index === 0 ? "bg-[#087f82]" : "bg-[#05252d]"
                     }`}
                   >
-                    <h2 className="text-center font-boxel text-2xl font-bold text-white">
+                    <h2 className="max-w-full text-center font-boxel text-[clamp(16px,5vw,24px)] leading-none font-bold text-white">
                       {month}
                     </h2>
-                    <p className="text-center font-boxel text-5xl font-bold text-white">
+                    <p className="mt-2 max-w-full text-center font-boxel text-[clamp(36px,12vw,48px)] leading-none font-bold text-white">
                       {day}
                     </p>
                   </div>
 
-                  <div className="flex w-[70%] items-center justify-center p-4 text-center md:w-[80%]">
+                  <div className="flex min-w-0 flex-1 items-center justify-center px-3 py-5 text-center sm:p-5 md:px-6">
                     {event.href && (
                       <span
                         className="absolute top-3 right-3 text-xl font-bold text-[#12caca]"
@@ -160,16 +160,23 @@ export default async function EventsPage() {
                         ↗
                       </span>
                     )}
-                    <div className="flex flex-col items-center gap-1">
-                      <h2 className="font-k2d text-lg font-bold text-white md:text-2xl">
+                    <div className="flex min-w-0 w-full flex-col items-center gap-2">
+                      <h2 className="w-full text-center font-k2d text-lg leading-tight font-bold text-white md:text-2xl">
                         {event.title}
                       </h2>
-                      <p className="font-k2d text-sm font-bold text-white/50 md:text-lg">
+                      <p className="w-full text-center font-k2d text-sm leading-snug font-bold break-words text-white/50 md:text-lg">
                         Location: {event.location}
                       </p>
-                      <div className="flex w-fit items-center gap-2 rounded-lg bg-white/10 p-2 text-white">
-                        <span aria-hidden="true">{dateOnly ? "▦" : "◷"}</span>
-                        <span className="font-k2d font-bold">{timing}</span>
+                      <div className="flex max-w-full w-fit items-center justify-center gap-2 rounded-lg bg-white/10 px-3 py-2.5 text-white">
+                        <span
+                          className="shrink-0 text-[28px] leading-none md:text-xl"
+                          aria-hidden="true"
+                        >
+                          {dateOnly ? "▦" : "◷"}
+                        </span>
+                        <span className="min-w-0 font-k2d text-xs leading-snug font-bold break-words sm:text-sm md:text-base">
+                          {timing}
+                        </span>
                       </div>
                     </div>
                   </div>
