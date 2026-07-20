@@ -27,3 +27,9 @@
 :root {
   --font-k2d: "K2D", Arial, sans-serif;
 }
+
+html,
+body {
+  background: #000;
+  overscroll-behavior-y: none;
+}
