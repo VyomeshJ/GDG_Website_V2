@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function GamesPage() {
   return (
-    <main className="bg-paper">
+    <main className="bg-black">
       <Navbar />
       <GamesCatalog />
       <Footer />

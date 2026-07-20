@@ -15,7 +15,7 @@ export default function Home() {
       <Philosophy />
       <Faq />
       <Trailer />
-      <div className="bg-white">
+      <div className="bg-black">
         <Footer />
       </div>
     </main>
