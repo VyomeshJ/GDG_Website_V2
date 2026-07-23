@@ -15,6 +15,14 @@ export const metadata: Metadata = {
     description:
       "Games, prototypes, and jam entries made by the Game Developer Guild community.",
     url: "/games",
+    images: [
+      {
+        url: "/assets/hero-bg.png",
+        width: 3508,
+        height: 2000,
+        alt: "University of Auckland Game Developer Guild",
+      },
+    ],
   },
 };
 

@@ -82,7 +82,7 @@ export async function getEvents(): Promise<GuildEvent[]> {
       headers: {
         Authorization: `Bearer ${token}`,
       },
-      cache: "no-store",
+      next: { revalidate: 300 },
     });
 
     if (!response.ok) return [];
@@ -95,4 +95,17 @@ export async function getEvents(): Promise<GuildEvent[]> {
   } catch {
     return [];
   }
+}
+
+export async function getUpcomingEvents(): Promise<GuildEvent[]> {
+  const events = await getEvents();
+  const currentTimestamp = Date.now();
+
+  return events
+    .filter((event) => new Date(event.endDate).getTime() >= currentTimestamp)
+    .sort(
+      (first, second) =>
+        new Date(first.startDate).getTime() -
+        new Date(second.startDate).getTime(),
+    );
 }

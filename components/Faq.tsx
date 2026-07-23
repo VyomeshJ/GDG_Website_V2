@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { motion, useReducedMotion } from "motion/react";
+import { motion } from "motion/react";
+import useAnimationsDisabled from "@/hooks/useAnimationsDisabled";
 
 const faqs = [
   {
@@ -38,7 +39,7 @@ const faqs = [
 ];
 
 export default function Faq() {
-  const reducedMotion = useReducedMotion();
+  const animationsDisabled = useAnimationsDisabled();
 
   return (
     <section
@@ -47,7 +48,7 @@ export default function Faq() {
       aria-labelledby="faq-heading"
     >
       <div
-        className="pointer-events-none absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat"
+        className="pointer-events-none absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-60"
         style={{ backgroundImage: "url('/assets/Pattern.svg')" }}
         aria-hidden="true"
       />
@@ -64,24 +65,26 @@ export default function Faq() {
         <motion.h2
           id="faq-heading"
           className="mb-[clamp(34px,5vw,64px)] text-center font-boxel text-[clamp(64px,8vw,112px)] leading-[.8] font-black tracking-[-.06em] uppercase"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          data-mobile-static="true"
+          initial={animationsDisabled ? false : { opacity: 0 }}
+          whileInView={animationsDisabled ? undefined : { opacity: 1 }}
           viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: reducedMotion ? 0.15 : 0.7 }}
+          transition={{ duration: 0.7 }}
         >
           FAQ
         </motion.h2>
 
         <motion.div
           className="grid grid-cols-3 items-start gap-[clamp(28px,5vw,76px)] max-[760px]:grid-cols-1 max-[760px]:gap-14"
-          initial="hidden"
-          whileInView="visible"
+          data-mobile-static="true"
+          initial={animationsDisabled ? false : "hidden"}
+          whileInView={animationsDisabled ? undefined : "visible"}
           viewport={{ once: false, amount: 0.25 }}
           variants={{
             hidden: {},
             visible: {
               transition: {
-                staggerChildren: reducedMotion ? 0 : 0.22,
+                staggerChildren: 0.22,
               },
             },
           }}
@@ -89,12 +92,13 @@ export default function Faq() {
           {faqs.map((faq) => (
             <motion.article
               className="text-center"
+              data-mobile-static="true"
               key={faq.question}
               variants={{
                 hidden: { opacity: 0 },
                 visible: {
                   opacity: 1,
-                  transition: { duration: reducedMotion ? 0.15 : 0.7 },
+                  transition: { duration: 0.7 },
                 },
               }}
             >
@@ -110,18 +114,20 @@ export default function Faq() {
 
         <motion.div
           className="relative mx-auto mt-[clamp(60px,8vw,100px)] flex h-[clamp(280px,30vw,400px)] max-w-[1200px] items-center justify-between gap-[clamp(18px,3vw,48px)] max-[760px]:mt-16 max-[760px]:h-[230px]"
-          initial="hidden"
-          whileInView="visible"
+          data-mobile-static="true"
+          initial={animationsDisabled ? false : "hidden"}
+          whileInView={animationsDisabled ? undefined : "visible"}
           viewport={{ once: false, amount: 0.2 }}
         >
           <motion.div
             className="relative z-0 w-[clamp(110px,15vw,210px)] flex-none max-[760px]:hidden"
+            data-mobile-static="true"
             variants={{
-              hidden: { x: reducedMotion ? 0 : "-55vw", opacity: 0 },
+              hidden: { x: "-55vw", opacity: 0 },
               visible: {
                 x: 0,
                 opacity: 1,
-                transition: { duration: reducedMotion ? 0.15 : 0.8, ease: "easeOut" },
+                transition: { duration: 0.8, ease: "easeOut" },
               },
             }}
           >
@@ -138,13 +144,14 @@ export default function Faq() {
 
           <motion.div
             className="group relative z-10 aspect-[1301/798] w-[min(45vw,520px)] flex-none transition-transform duration-200 ease-out hover:scale-[1.035] focus-within:scale-[1.035] max-[760px]:w-full"
+            data-mobile-static="true"
             variants={{
               hidden: { opacity: 0 },
               visible: {
                 opacity: 1,
                 transition: {
-                  delay: reducedMotion ? 0 : 0.18,
-                  duration: reducedMotion ? 0.15 : 0.85,
+                  delay: 0.18,
+                  duration: 0.85,
                 },
               },
             }}
@@ -196,12 +203,13 @@ export default function Faq() {
 
           <motion.div
             className="relative z-0 w-[clamp(110px,15vw,210px)] flex-none max-[760px]:hidden"
+            data-mobile-static="true"
             variants={{
-              hidden: { x: reducedMotion ? 0 : "55vw", opacity: 0 },
+              hidden: { x: "55vw", opacity: 0 },
               visible: {
                 x: 0,
                 opacity: 1,
-                transition: { duration: reducedMotion ? 0.15 : 0.8, ease: "easeOut" },
+                transition: { duration: 0.8, ease: "easeOut" },
               },
             }}
           >

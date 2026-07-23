@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { createPortal, preload } from "react-dom";
+import { createPortal } from "react-dom";
 import { useEffect, useRef } from "react";
 
 const membershipCards = [
@@ -47,10 +47,6 @@ export default function JoinOverlay({
   open: boolean;
   onClose: () => void;
 }) {
-  membershipCards.forEach((card) => {
-    preload(card.image, { as: "image", fetchPriority: "high" });
-  });
-
   const overlayRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
 

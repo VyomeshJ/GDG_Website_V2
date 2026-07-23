@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import GongClient from "./GongClient";
 
@@ -13,18 +14,19 @@ export const metadata: Metadata = {
 export default function GongPage() {
   return (
     <main
+      className="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-[#2c2c2c]"
       style={{
-        minHeight: "100vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
         backgroundColor: "#2c2c2c",
-        backgroundImage: "url('/BG/WhatAreWeBG.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
       }}
     >
+      <Image
+        className="-z-10 object-cover"
+        src="/BG/WhatAreWeBG.png"
+        alt=""
+        fill
+        sizes="100vw"
+        priority
+      />
       <Navbar />
       <GongClient />
     </main>

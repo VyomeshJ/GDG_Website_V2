@@ -20,10 +20,9 @@ export default function Hero() {
           className="absolute inset-0 z-0 h-full w-full scale-[1.08] object-cover object-center [image-rendering:pixelated]"
           src="/assets/hero-bg.png"
           alt=""
-          width={769}
-          height={439}
+          fill
+          sizes="100vw"
           priority
-          unoptimized
         />
         <div
           className="pointer-events-none absolute inset-0 z-1 scale-x-[1.35] bg-[radial-gradient(circle_at_50%_42%,transparent_0%,transparent_28%,rgba(0,0,0,1)_50%,#000_92%)] max-[760px]:bg-[radial-gradient(circle_at_50%_32%,transparent_0%,transparent_28%,rgba(0,0,0,1)_40%,#000_92%)]"
@@ -42,7 +41,13 @@ export default function Hero() {
             aria-expanded={joinOpen}
             onClick={() => setJoinOpen(true)}
           >
-            <Image className="col-start-1 row-start-1 block h-19 w-43 opacity-100 transition-opacity duration-75 [image-rendering:pixelated] [transition-timing-function:steps(1)] group-hover:opacity-0 group-focus-visible:opacity-0 max-[760px]:h-16 max-[760px]:w-[145px]" src="/assets/join-button.gif" alt="Join us" width={43} height={19} unoptimized />
+            <picture className="col-start-1 row-start-1 block h-19 w-43 max-[760px]:h-16 max-[760px]:w-[145px]">
+              <source
+                media="(max-width: 760px)"
+                srcSet="/assets/join-button-static.png"
+              />
+              <Image className="block size-full opacity-100 transition-opacity duration-75 [image-rendering:pixelated] [transition-timing-function:steps(1)] group-hover:opacity-0 group-focus-visible:opacity-0" src="/assets/join-button.gif" alt="Join us" width={43} height={19} unoptimized />
+            </picture>
             <Image className="col-start-1 row-start-1 block h-19 w-43 opacity-0 transition-opacity duration-75 [image-rendering:pixelated] [transition-timing-function:steps(1)] group-hover:opacity-100 group-focus-visible:opacity-100 max-[760px]:h-16 max-[760px]:w-[145px]" src="/assets/join-button-hover.png" alt="" width={43} height={19} unoptimized aria-hidden="true" />
           </button>
 
@@ -53,7 +58,13 @@ export default function Hero() {
             rel="noopener noreferrer"
             aria-label="Join the Game Developers Guild on Discord"
           >
-            <Image className="col-start-1 row-start-1 block h-19 w-43 opacity-100 transition-opacity duration-75 [image-rendering:pixelated] [transition-timing-function:steps(1)] group-hover:opacity-0 group-focus-visible:opacity-0 max-[760px]:h-16 max-[760px]:w-[145px]" src="/assets/discord-button.gif" alt="Join us on Discord" width={43} height={19} unoptimized />
+            <picture className="col-start-1 row-start-1 block h-19 w-43 max-[760px]:h-16 max-[760px]:w-[145px]">
+              <source
+                media="(max-width: 760px)"
+                srcSet="/assets/discord-button-static.png"
+              />
+              <Image className="block size-full opacity-100 transition-opacity duration-75 [image-rendering:pixelated] [transition-timing-function:steps(1)] group-hover:opacity-0 group-focus-visible:opacity-0" src="/assets/discord-button.gif" alt="Join us on Discord" width={43} height={19} unoptimized />
+            </picture>
             <Image className="col-start-1 row-start-1 block h-19 w-43 opacity-0 transition-opacity duration-75 [image-rendering:pixelated] [transition-timing-function:steps(1)] group-hover:opacity-100 group-focus-visible:opacity-100 max-[760px]:h-16 max-[760px]:w-[145px]" src="/assets/discord-button-hover.png" alt="" width={43} height={19} unoptimized aria-hidden="true" />
           </a>
         </div>

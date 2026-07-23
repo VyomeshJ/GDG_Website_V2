@@ -57,6 +57,9 @@ export default function Navbar({ flat = false }: { flat?: boolean }) {
 
   const navigateTo = (section: string) => {
     setMenuOpen(false);
+    const scrollBehavior = window.matchMedia("(max-width: 760px)").matches
+      ? "auto"
+      : "smooth";
 
     if (section === "games") {
       router.push("/games");
@@ -77,7 +80,7 @@ export default function Navbar({ flat = false }: { flat?: boolean }) {
       if (pathname !== "/") {
         router.push("/");
       } else {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        window.scrollTo({ top: 0, behavior: scrollBehavior });
       }
       return;
     }
@@ -89,7 +92,7 @@ export default function Navbar({ flat = false }: { flat?: boolean }) {
 
     document
       .querySelector<HTMLElement>(`[data-section="${section}"]`)
-      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+      ?.scrollIntoView({ behavior: scrollBehavior, block: "start" });
   };
 
   useEffect(() => {

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useCallback, useRef, useState } from "react";
 
 export default function GongClient() {
@@ -48,16 +49,17 @@ export default function GongClient() {
           cursor: "pointer",
           transition: "background-color 160ms ease, box-shadow 160ms ease",
           display: "flex",
+          position: "relative",
           alignItems: "center",
           justifyContent: "center",
         }}
       >
-        <img
+        <Image
           src="/gong-assets/gong.jpg"
           alt="Gong"
+          fill
+          sizes="(max-width: 760px) calc(100vw - 2rem), 60vh"
           style={{
-            height: "100%",
-            width: "100%",
             display: "block",
             objectFit: "contain",
             borderRadius: "inherit",
@@ -67,7 +69,11 @@ export default function GongClient() {
         />
       </button>
 
-      <audio ref={audioRef} src="/gong-assets/Gong Sound Effect.mp3" preload="auto" />
+      <audio
+        ref={audioRef}
+        src="/gong-assets/Gong Sound Effect.mp3"
+        preload="metadata"
+      />
     </>
   );
 }

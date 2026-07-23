@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 const siteUrl = "https://www.uoagdg.com";
@@ -10,6 +10,11 @@ export const metadata: Metadata = {
   title: "Game Developer Guild",
   description: siteDescription,
   applicationName: "Game Developer Guild",
+  category: "education",
+  creator: "University of Auckland Game Developer Guild",
+  formatDetection: {
+    telephone: false,
+  },
   alternates: {
     canonical: "/",
   },
@@ -23,8 +28,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/assets/hero-bg.png",
-        width: 769,
-        height: 439,
+        width: 3508,
+        height: 2000,
         alt: "University of Auckland Game Developer Guild",
       },
     ],
@@ -38,7 +43,19 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#030506",
+  colorScheme: "dark",
 };
 
 const organizationSchema = {
@@ -48,6 +65,8 @@ const organizationSchema = {
   alternateName: "UoA GDG",
   url: siteUrl,
   email: "council@uoagdg.com",
+  description: siteDescription,
+  logo: `${siteUrl}/assets/laser-logo.svg`,
   foundingDate: "2018",
   sameAs: [
     "https://www.facebook.com/UoAGDG/",
@@ -64,7 +83,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en-NZ">
       <body className="m-0 bg-black font-k2d text-ink">
         <script
           type="application/ld+json"

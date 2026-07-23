@@ -162,7 +162,6 @@ export default function GamesCatalog() {
                         alt={`${game.title} cover art`}
                         fill
                         sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
-                        unoptimized={game.image.endsWith(".gif")}
                       />
                     ) : (
                       <div className="grid size-full place-items-center bg-[radial-gradient(circle_at_center,#0c7075,#05252d)] p-8 text-center font-boxel text-2xl text-white uppercase">

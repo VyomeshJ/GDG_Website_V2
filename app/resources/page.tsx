@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     description:
       "Learning paths and community resources for every part of game development.",
     url: "/resources",
+    images: [
+      {
+        url: "/assets/hero-bg.png",
+        width: 3508,
+        height: 2000,
+        alt: "University of Auckland Game Developer Guild",
+      },
+    ],
   },
 };
 

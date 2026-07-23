@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 import resourcesData from "@/data/resources.json";
+import useAnimationsDisabled from "@/hooks/useAnimationsDisabled";
 
 type ResourcePath = {
   id: string;
@@ -79,10 +80,10 @@ const hexagon =
 
 function ResourceBubble({
   resource,
-  reducedMotion,
+  animationsDisabled,
 }: {
   resource: Resource;
-  reducedMotion: boolean;
+  animationsDisabled: boolean;
 }) {
   const motionProps = {
     className:
@@ -92,7 +93,7 @@ function ResourceBubble({
     animate: { opacity: 1 },
     exit: { opacity: 0 },
     transition: {
-      duration: reducedMotion ? 0 : 0.42,
+      duration: animationsDisabled ? 0 : 0.42,
       ease: "easeInOut" as const,
     },
   };
@@ -114,7 +115,7 @@ function ResourceBubble({
 
 export default function ResourceExplorer() {
   const [selectedId, setSelectedId] = useState<string | null>(null);
-  const reducedMotion = Boolean(useReducedMotion());
+  const animationsDisabled = useAnimationsDisabled();
   const selected = resourcePaths.find((path) => path.id === selectedId);
   const resources: Resource[] = selected
     ? ((resourcesData as Record<string, ResourceLink[]>)[selected.id] ?? [])
@@ -130,7 +131,10 @@ export default function ResourceExplorer() {
       <motion.div
         className="overflow-visible px-2 py-2 text-center"
         animate={{ opacity: selected ? 0 : 1, y: selected ? -12 : 0 }}
-        transition={{ duration: reducedMotion ? 0 : 0.42, ease: "easeInOut" }}
+        transition={{
+          duration: animationsDisabled ? 0 : 0.42,
+          ease: "easeInOut",
+        }}
       >
         <h2
           className="font-boxel text-[clamp(18px,2.5vw,30px)] leading-[1.35] font-black uppercase"
@@ -147,7 +151,10 @@ export default function ResourceExplorer() {
         <motion.div
           className={`absolute top-1/2 left-1/2 z-10 h-[clamp(88px,25cqw,194px)] w-[clamp(100px,28cqw,220px)] -translate-x-1/2 -translate-y-1/2 bg-white/25 p-[3px] ${hexagon}`}
           animate={{ opacity: selected ? 0 : 1 }}
-          transition={{ duration: reducedMotion ? 0 : 0.42, ease: "easeInOut" }}
+          transition={{
+            duration: animationsDisabled ? 0 : 0.42,
+            ease: "easeInOut",
+          }}
         >
           <div
             className={`grid size-full place-items-center bg-[#151515] p-5 ${hexagon}`}
@@ -183,7 +190,7 @@ export default function ResourceExplorer() {
                     }
               }
               transition={{
-                duration: reducedMotion ? 0 : 0.42,
+                duration: animationsDisabled ? 0 : 0.42,
                 ease: "easeInOut",
               }}
               key={path.id}
@@ -220,7 +227,7 @@ export default function ResourceExplorer() {
           {resources.map((resource, index) => (
             <ResourceBubble
               resource={resource}
-              reducedMotion={reducedMotion}
+              animationsDisabled={animationsDisabled}
               key={`${selected?.id}-${index}`}
             />
           ))}
@@ -236,7 +243,7 @@ export default function ResourceExplorer() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{
-                duration: reducedMotion ? 0 : 0.42,
+                duration: animationsDisabled ? 0 : 0.42,
                 ease: "easeInOut",
               }}
               onClick={() => setSelectedId(null)}

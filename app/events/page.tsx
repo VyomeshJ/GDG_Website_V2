@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { getEvents, type GuildEvent } from "@/data/events";
+import { getUpcomingEvents } from "@/data/events";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
 
 export const metadata: Metadata = {
   title: "Events | Game Developer Guild",
@@ -16,26 +16,50 @@ export const metadata: Metadata = {
     title: "GDG Events",
     description: "Upcoming events from the Game Developer Guild.",
     url: "/events",
+    images: [
+      {
+        url: "/assets/hero-bg.png",
+        width: 3508,
+        height: 2000,
+        alt: "University of Auckland Game Developer Guild",
+      },
+    ],
   },
 };
 
-const eventStartTimestamp = (event: GuildEvent) =>
-  new Date(event.startDate).getTime();
-
-const eventEndTimestamp = (event: GuildEvent) =>
-  new Date(event.endDate).getTime();
-
 export default async function EventsPage() {
-  const events = await getEvents();
-  const upcomingEvents = events
-    .filter((event) => eventEndTimestamp(event) >= Date.now())
-    .sort(
-      (first, second) =>
-        eventStartTimestamp(first) - eventStartTimestamp(second),
-    );
+  const upcomingEvents = await getUpcomingEvents();
+  const eventSchema = {
+    "@context": "https://schema.org",
+    "@graph": upcomingEvents.map((event) => ({
+      "@type": "Event",
+      name: event.title,
+      startDate: event.startDate,
+      endDate: event.endDate,
+      eventStatus: "https://schema.org/EventScheduled",
+      location: {
+        "@type": "Place",
+        name: event.location,
+      },
+      organizer: {
+        "@type": "Organization",
+        name: "University of Auckland Game Developer Guild",
+        url: "https://www.uoagdg.com",
+      },
+      ...(event.href ? { url: event.href } : {}),
+    })),
+  };
 
   return (
     <div className="flex min-h-screen flex-col bg-black">
+      {upcomingEvents.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(eventSchema).replace(/</g, "\\u003c"),
+          }}
+        />
+      )}
       <Navbar />
 
       <main className="flex flex-1 flex-col pb-[clamp(72px,10vw,140px)]">

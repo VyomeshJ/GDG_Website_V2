@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { motion, useReducedMotion } from "motion/react";
+import { motion } from "motion/react";
+import useAnimationsDisabled from "@/hooks/useAnimationsDisabled";
 
 const icons = [
   { file: "Spec Icon.svg", left: "5%", top: "8%", size: 148, rotate: -12 },
@@ -50,15 +51,15 @@ const iconVariants = {
 };
 
 export default function Philosophy() {
-  const reducedMotion = useReducedMotion();
+  const animationsDisabled = useAnimationsDisabled();
 
   return (
     <motion.section
       data-section="philosophy"
       className="relative isolate min-h-[780px] scroll-mt-24 overflow-hidden bg-white px-[clamp(24px,7vw,110px)] py-[clamp(58px,6vw,84px)] text-[#292929] max-[760px]:min-h-[850px] max-[760px]:scroll-mt-22 max-[760px]:py-14"
       aria-labelledby="philosophy-heading"
-      initial="hidden"
-      whileInView="visible"
+      initial={animationsDisabled ? false : "hidden"}
+      whileInView={animationsDisabled ? undefined : "visible"}
       viewport={{ once: false, amount: 0.08 }}
     >
       <h2 id="philosophy-heading" className="sr-only">
@@ -69,12 +70,19 @@ export default function Philosophy() {
         {icons.map((icon, index) => (
           <motion.div
             className="absolute max-[760px]:scale-75"
+            data-mobile-philosophy-icon="true"
             style={{ left: icon.left, top: icon.top, width: icon.size }}
+            animate={
+              animationsDisabled
+                ? { x: 0, rotate: icon.rotate, opacity: 0.82 }
+                : undefined
+            }
+            transition={animationsDisabled ? { duration: 0 } : undefined}
             custom={{
               from: index % 2 === 0 ? -1 : 1,
               index,
-              reduced: Boolean(reducedMotion),
-              rotate: reducedMotion ? 0 : icon.rotate,
+              reduced: false,
+              rotate: icon.rotate,
             }}
             variants={iconVariants}
             key={icon.file}
@@ -94,9 +102,12 @@ export default function Philosophy() {
       <div className="relative z-10 mx-auto flex min-h-[620px] max-w-[860px] items-center justify-center max-[760px]:min-h-[730px]">
         <motion.article
           className="flex min-h-[460px] flex-col justify-center rounded-[18px] bg-white/90 p-[clamp(26px,3.5vw,46px)] text-center shadow-[0_18px_60px_rgba(0,0,0,.12)] backdrop-blur-[3px] max-[760px]:min-h-[540px]"
-          initial="hidden"
-          whileInView="visible"
+          data-mobile-static-transform="true"
+          initial={animationsDisabled ? false : "hidden"}
+          animate={animationsDisabled ? { opacity: 1, y: 0 } : undefined}
+          whileInView={animationsDisabled ? undefined : "visible"}
           viewport={{ once: false, amount: 0.2 }}
+          transition={animationsDisabled ? { duration: 0 } : undefined}
           variants={{
             hidden: { opacity: 0, y: 45 },
             visible: {

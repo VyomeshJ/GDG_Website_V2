@@ -1,7 +1,8 @@
 "use client";
 
 import type { ReactNode } from "react";
-import { motion, useReducedMotion } from "motion/react";
+import { motion } from "motion/react";
+import useAnimationsDisabled from "@/hooks/useAnimationsDisabled";
 
 export default function FadeInContent({
   children,
@@ -10,15 +11,16 @@ export default function FadeInContent({
   children: ReactNode;
   className?: string;
 }) {
-  const reducedMotion = useReducedMotion();
+  const animationsDisabled = useAnimationsDisabled();
 
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
+      data-mobile-static="true"
+      initial={animationsDisabled ? false : { opacity: 0 }}
+      whileInView={animationsDisabled ? undefined : { opacity: 1 }}
       viewport={{ once: false, amount: 0.15 }}
-      transition={{ duration: reducedMotion ? 0.15 : 0.75, ease: "easeOut" }}
+      transition={{ duration: 0.75, ease: "easeOut" }}
     >
       {children}
     </motion.div>

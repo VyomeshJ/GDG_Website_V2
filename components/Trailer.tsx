@@ -1,9 +1,10 @@
 "use client";
 
-import { motion, useReducedMotion } from "motion/react";
+import { motion } from "motion/react";
+import useAnimationsDisabled from "@/hooks/useAnimationsDisabled";
 
 export default function Trailer() {
-  const reducedMotion = useReducedMotion();
+  const animationsDisabled = useAnimationsDisabled();
 
   return (
     <section
@@ -19,23 +20,28 @@ export default function Trailer() {
         <motion.h2
           id="trailer-heading"
           className="mb-[clamp(32px,4vw,48px)] text-center font-boxel text-[clamp(46px,6vw,82px)] leading-[.85] font-black tracking-[-.055em] uppercase"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          data-mobile-static="true"
+          initial={animationsDisabled ? false : { opacity: 0 }}
+          whileInView={animationsDisabled ? undefined : { opacity: 1 }}
           viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: reducedMotion ? 0.15 : 0.7 }}
+          transition={{ duration: 0.7 }}
         >
           Our Trailer
         </motion.h2>
         <motion.div
           className="overflow-hidden rounded-[16px] border border-white/15 bg-black shadow-[0_24px_70px_rgba(0,0,0,.65)]"
-          initial={{ opacity: 0, scale: reducedMotion ? 1 : 0.72 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: false, amount: 0.35 }}
-          transition={
-            reducedMotion
-              ? { duration: 0.15 }
-              : { type: "spring", stiffness: 180, damping: 11, mass: 0.8 }
+          data-mobile-static-transform="true"
+          initial={animationsDisabled ? false : { opacity: 0, scale: 0.72 }}
+          whileInView={
+            animationsDisabled ? undefined : { opacity: 1, scale: 1 }
           }
+          viewport={{ once: false, amount: 0.35 }}
+          transition={{
+            type: "spring",
+            stiffness: 180,
+            damping: 11,
+            mass: 0.8,
+          }}
         >
           <iframe
             className="aspect-video w-full border-0"

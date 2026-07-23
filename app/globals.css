@@ -33,3 +33,29 @@ body {
   background: #000;
   overscroll-behavior-y: none;
 }
+
+@media (max-width: 760px) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+
+  [data-mobile-static="true"] {
+    opacity: 1 !important;
+  }
+
+  [data-mobile-static-transform="true"] {
+    opacity: 1 !important;
+    transform: none !important;
+    will-change: auto !important;
+  }
+
+  [data-mobile-philosophy-icon="true"] {
+    opacity: 0.82 !important;
+    transform: scale(0.75) !important;
+    will-change: auto !important;
+  }
+}
