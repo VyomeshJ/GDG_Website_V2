@@ -89,7 +89,7 @@ export default function GamesCatalog() {
                         <button
                           className={`cursor-pointer rounded-[6px] px-3 py-2 text-sm font-black transition-colors sm:min-w-24 ${
                             selected
-                              ? "bg-[#12caca] text-[#05252d]"
+                              ? "bg-[#B1D468] text-[#0A2E24]"
                               : "text-white/65 hover:bg-white/10 hover:text-white"
                           }`}
                           type="button"
@@ -112,7 +112,7 @@ export default function GamesCatalog() {
                   </span>
                   {selectedTags.length > 0 && (
                     <button
-                      className="cursor-pointer rounded-[7px] border border-white/20 px-3 py-1.5 text-sm font-black text-white/65 transition-colors hover:border-[#12caca] hover:text-[#12caca]"
+                      className="cursor-pointer rounded-[7px] border border-white/20 px-3 py-1.5 text-sm font-black text-white/65 transition-colors hover:border-[#B1D468] hover:text-[#B1D468]"
                       type="button"
                       onClick={() => setSelectedTags([])}
                     >
@@ -127,8 +127,8 @@ export default function GamesCatalog() {
                       <button
                         className={`cursor-pointer rounded-full border px-3 py-1.5 text-xs font-bold transition-colors ${
                           selected
-                            ? "border-[#12caca] bg-[#12caca] text-[#05252d]"
-                            : "border-white/15 bg-white/5 text-white/65 hover:border-[#12caca]/70 hover:text-white"
+                            ? "border-[#B1D468] bg-[#B1D468] text-[#0A2E24]"
+                            : "border-white/15 bg-white/5 text-white/65 hover:border-[#B1D468]/70 hover:text-white"
                         }`}
                         type="button"
                         aria-pressed={selected}
@@ -148,28 +148,28 @@ export default function GamesCatalog() {
             <div className="grid grid-cols-1 gap-[clamp(20px,2.5vw,34px)] sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {filteredGames.map((game) => (
                 <a
-                  className="group flex min-h-[490px] flex-col overflow-hidden rounded-[16px] border-2 border-white/10 bg-[#151515] text-white shadow-[0_14px_35px_rgba(0,0,0,.35)] transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-1.5 hover:border-[#12caca] hover:shadow-[0_20px_45px_rgba(18,202,202,.18)] focus-visible:border-[#12caca] focus-visible:outline-none"
+                  className="group flex min-h-[490px] flex-col overflow-hidden rounded-[16px] border-2 border-white/10 bg-[#151515] text-white shadow-[0_14px_35px_rgba(0,0,0,.35)] transition-transform duration-200 ease-out hover:-translate-y-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B1D468] motion-reduce:transform-none motion-reduce:transition-none"
                   href={game.href}
                   target="_blank"
                   rel="noopener noreferrer"
                   key={`${game.title}-${game.href}`}
                 >
-                  <div className="relative aspect-[315/250] overflow-hidden bg-[#05252d]">
+                  <div className="relative aspect-[315/250] overflow-hidden bg-[#0A6245]">
                     {game.image ? (
                       <Image
-                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                        className="object-cover transition-transform duration-300 ease-out group-hover:scale-[1.04] motion-reduce:transform-none motion-reduce:transition-none"
                         src={game.image}
                         alt={`${game.title} cover art`}
                         fill
                         sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
                       />
                     ) : (
-                      <div className="grid size-full place-items-center bg-[radial-gradient(circle_at_center,#0c7075,#05252d)] p-8 text-center font-boxel text-2xl text-white uppercase">
+                      <div className="grid size-full place-items-center bg-[radial-gradient(circle_at_center,#16865F,#0A6245)] p-8 text-center font-boxel text-2xl text-white uppercase">
                         {game.title}
                       </div>
                     )}
                     {game.playable && (
-                      <span className="absolute top-3 right-3 rounded-full bg-[#12caca] px-3 py-1 text-xs font-black text-[#05252d] shadow-lg">
+                      <span className="absolute top-3 right-3 rounded-full bg-[#B1D468] px-3 py-1 text-xs font-black text-[#0A2E24] shadow-lg">
                         Playable in browser
                       </span>
                     )}
@@ -179,7 +179,7 @@ export default function GamesCatalog() {
                     <h2 className="line-clamp-2 text-[clamp(20px,2vw,27px)] leading-[1.05] font-black tracking-[-.025em]">
                       {game.title}
                     </h2>
-                    <p className="mt-1 truncate text-sm font-bold text-[#12caca]">
+                    <p className="mt-1 truncate text-sm font-bold text-[#B1D468]">
                       by {game.author}
                     </p>
                     <p className="mt-4 line-clamp-3 text-sm leading-[1.5] text-white/60">
@@ -194,7 +194,7 @@ export default function GamesCatalog() {
                       )}
                       {game.tags.slice(0, 3).map((tag) => (
                         <span
-                          className="rounded-full bg-[#12caca]/15 px-3 py-1 text-xs font-bold text-[#12caca]"
+                          className="rounded-full bg-[#B1D468]/15 px-3 py-1 text-xs font-bold text-[#B1D468]"
                           key={tag}
                         >
                           {tag}
@@ -202,7 +202,7 @@ export default function GamesCatalog() {
                       ))}
                     </div>
 
-                    <span className="mt-auto pt-5 text-sm font-black tracking-[.08em] text-[#12caca] uppercase transition-colors group-hover:text-white">
+                    <span className="mt-auto pt-5 text-sm font-black tracking-[.08em] text-[#B1D468] uppercase transition-colors group-hover:text-white">
                       View game ↗
                     </span>
                   </div>

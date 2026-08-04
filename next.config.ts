@@ -21,7 +21,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/tutorials",
-        destination: "/resources",
+        destination: "https://uoagdg.itch.io/",
         permanent: true,
       },
     ];

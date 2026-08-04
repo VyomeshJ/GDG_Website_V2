@@ -165,35 +165,35 @@ export default function Faq() {
               unoptimized
             />
             <a
-              className="absolute top-[1%] left-[4%] h-[23%] w-[20%] rounded-2xl outline-none focus-visible:ring-4 focus-visible:ring-[#12caca]"
+              className="absolute top-[1%] left-[4%] h-[23%] w-[20%] rounded-2xl outline-none focus-visible:ring-4 focus-visible:ring-[#B1D468]"
               href="https://www.instagram.com/uoagdg/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GDG on Instagram"
             />
             <a
-              className="absolute top-[1%] right-[1%] h-[24%] w-[22%] rounded-2xl outline-none focus-visible:ring-4 focus-visible:ring-[#12caca]"
+              className="absolute top-[1%] right-[1%] h-[24%] w-[22%] rounded-2xl outline-none focus-visible:ring-4 focus-visible:ring-[#B1D468]"
               href="https://www.youtube.com/channel/UCiwPc3JSk--DZmBnUDP4eeg"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GDG on YouTube"
             />
             <a
-              className="absolute top-[28%] left-[34%] h-[47%] w-[34%] rounded-2xl outline-none focus-visible:ring-4 focus-visible:ring-[#12caca]"
+              className="absolute top-[28%] left-[34%] h-[47%] w-[34%] rounded-2xl outline-none focus-visible:ring-4 focus-visible:ring-[#B1D468]"
               href="https://discord.com/invite/cnmjh8NQDT"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Join the GDG Discord"
             />
             <a
-              className="absolute top-[35%] right-0 h-[28%] w-[21%] rounded-2xl outline-none focus-visible:ring-4 focus-visible:ring-[#12caca]"
+              className="absolute top-[35%] right-0 h-[28%] w-[21%] rounded-2xl outline-none focus-visible:ring-4 focus-visible:ring-[#B1D468]"
               href="https://drive.google.com/drive/folders/1kHfv8UXbKuWpPqWyolEuCuUhauK3m11E"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GDG Google Drive"
             />
             <a
-              className="absolute bottom-0 left-[5%] h-[24%] w-[20%] rounded-2xl outline-none focus-visible:ring-4 focus-visible:ring-[#12caca]"
+              className="absolute bottom-0 left-[5%] h-[24%] w-[20%] rounded-2xl outline-none focus-visible:ring-4 focus-visible:ring-[#B1D468]"
               href="https://www.facebook.com/UoAGDG/"
               target="_blank"
               rel="noopener noreferrer"

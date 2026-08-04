@@ -41,14 +41,14 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="rounded-t-[22px] border-t border-white/25 bg-[#05252d] px-[clamp(22px,5vw,72px)] py-[clamp(18px,2.5vw,28px)] font-k2d text-white shadow-[inset_0_2px_0_rgba(255,255,255,.08)]">
+    <footer className="rounded-t-[22px] border-t border-white/25 bg-[#0A6245] px-[clamp(22px,5vw,72px)] py-[clamp(18px,2.5vw,28px)] font-k2d text-white shadow-[inset_0_2px_0_rgba(255,255,255,.08)]">
       <FadeInContent className="mx-auto flex max-w-[1500px] items-end justify-between gap-10 max-[760px]:flex-col max-[760px]:items-center max-[760px]:text-center">
         <div className="flex flex-col items-start gap-2 max-[760px]:items-center">
           <p className="text-[clamp(15px,1.5vw,22px)] leading-tight font-black">
             Copyright © 2026 UoA Game Developer Guild
           </p>
           <a
-            className="text-[clamp(13px,1.25vw,18px)] font-black uppercase transition-colors hover:text-[#12caca] focus-visible:text-[#12caca] focus-visible:outline-none"
+            className="text-[clamp(13px,1.25vw,18px)] font-black uppercase transition-colors hover:text-[#B1D468] focus-visible:text-[#B1D468] focus-visible:outline-none"
             href="mailto:council@uoagdg.com"
           >
             <Image
@@ -67,7 +67,7 @@ export default function Footer() {
           <div className="flex flex-wrap justify-end gap-3 max-[760px]:justify-center">
             {socialLinks.map((social) => (
               <a
-                className="grid size-10 place-items-center rounded-[7px] border-2 border-white text-lg font-black transition-[color,border-color,transform] duration-150 hover:-translate-y-0.5 hover:border-[#12caca] hover:text-[#12caca] focus-visible:border-[#12caca] focus-visible:text-[#12caca] focus-visible:outline-none"
+                className="grid size-10 place-items-center rounded-[7px] border-2 border-white text-lg font-black transition-[color,border-color,transform] duration-150 hover:-translate-y-0.5 hover:border-[#B1D468] hover:text-[#B1D468] focus-visible:border-[#B1D468] focus-visible:text-[#B1D468] focus-visible:outline-none"
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -86,7 +86,7 @@ export default function Footer() {
             ))}
           </div>
           <a
-            className="text-[clamp(15px,1.4vw,20px)] font-black transition-colors hover:text-[#12caca] focus-visible:text-[#12caca] focus-visible:outline-none"
+            className="text-[clamp(15px,1.4vw,20px)] font-black transition-colors hover:text-[#B1D468] focus-visible:text-[#B1D468] focus-visible:outline-none"
             href="tel:+642041129013"
           >
             <Image

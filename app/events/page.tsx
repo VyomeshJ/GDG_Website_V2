@@ -156,7 +156,7 @@ export default async function EventsPage() {
 
               const cardClassName = `relative m-2 flex min-h-[190px] w-[calc(100vw-32px)] items-stretch overflow-hidden rounded-lg bg-[#151515] sm:w-[82vw] md:min-h-40 md:w-[60vw] lg:w-[50vw] ${
                 event.href
-                  ? "border-2 border-[#12caca]"
+                  ? "border-2 border-[#B1D468]"
                   : "border-2 border-transparent"
               }`;
 
@@ -164,7 +164,7 @@ export default async function EventsPage() {
                 <>
                   <div
                     className={`flex w-[28%] min-w-[88px] max-w-[116px] shrink-0 flex-col items-center justify-center px-2 py-4 md:w-[20%] md:max-w-none md:px-4 ${
-                      index === 0 ? "bg-[#087f82]" : "bg-[#05252d]"
+                      index === 0 ? "bg-[#16865F]" : "bg-[#0A6245]"
                     }`}
                   >
                     <h2 className="max-w-full text-center font-boxel text-[clamp(16px,5vw,24px)] leading-none font-bold text-white">
@@ -178,7 +178,7 @@ export default async function EventsPage() {
                   <div className="flex min-w-0 flex-1 items-center justify-center px-3 py-5 text-center sm:p-5 md:px-6">
                     {event.href && (
                       <span
-                        className="absolute top-3 right-3 text-xl font-bold text-[#12caca]"
+                        className="absolute top-3 right-3 text-xl font-bold text-[#B1D468]"
                         aria-hidden="true"
                       >
                         ↗
