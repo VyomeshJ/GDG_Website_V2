@@ -138,7 +138,7 @@ export default function Navbar({ flat = false }: { flat?: boolean }) {
           <div className="flex justify-end gap-[clamp(18px,3vw,42px)]">
             {navigation.slice(0, 2).map((item) => (
               <button
-                className="cursor-pointer text-[13px] font-extrabold tracking-[.08em] uppercase transition-[color,transform] duration-200 hover:-translate-y-0.5 hover:text-[#B1D468] focus-visible:text-[#B1D468] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B1D468]"
+                className="cursor-pointer text-[13px] font-extrabold tracking-[.08em] uppercase transition-[color,transform] duration-200 hover:-translate-y-0.5 hover:text-[#17DFB4] focus-visible:text-[#17DFB4] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#17DFB4]"
                 key={item}
                 type="button"
                 onClick={() => navigateTo(sectionFor(item))}
@@ -153,7 +153,7 @@ export default function Navbar({ flat = false }: { flat?: boolean }) {
           <div className="flex justify-start gap-[clamp(18px,3vw,42px)]">
             {navigation.slice(2).map((item) => (
               <button
-                className="cursor-pointer text-[13px] font-extrabold tracking-[.08em] uppercase transition-[color,transform] duration-200 hover:-translate-y-0.5 hover:text-[#B1D468] focus-visible:text-[#B1D468] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B1D468]"
+                className="cursor-pointer text-[13px] font-extrabold tracking-[.08em] uppercase transition-[color,transform] duration-200 hover:-translate-y-0.5 hover:text-[#17DFB4] focus-visible:text-[#17DFB4] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#17DFB4]"
                 key={item}
                 type="button"
                 onClick={() => navigateTo(sectionFor(item))}
@@ -206,7 +206,7 @@ export default function Navbar({ flat = false }: { flat?: boolean }) {
             <div className="px-5 py-3">
               {navigation.map((item) => (
                 <button
-                  className="flex w-full cursor-pointer items-center border-b border-white/15 px-2 py-4 text-sm font-extrabold tracking-[.1em] uppercase transition-colors last:border-b-0 hover:text-[#B1D468] focus-visible:text-[#B1D468] focus-visible:outline-2 focus-visible:outline-[#B1D468]"
+                  className="flex w-full cursor-pointer items-center border-b border-white/15 px-2 py-4 text-sm font-extrabold tracking-[.1em] uppercase transition-colors last:border-b-0 hover:text-[#17DFB4] focus-visible:text-[#17DFB4] focus-visible:outline-2 focus-visible:outline-[#17DFB4]"
                   key={item}
                   type="button"
                   tabIndex={menuOpen ? 0 : -1}

@@ -20,7 +20,8 @@
   --font-boxel: "Boxel", "Courier New", monospace;
   --font-k2d: "K2D", Arial, sans-serif;
   --color-ink: #080a0c;
-  --color-gdg-green: #b1d468;
+  --color-gdg-primary: #041f26;
+  --color-gdg-highlight: #17dfb4;
   --color-paper: #f5f2e9;
 }
 

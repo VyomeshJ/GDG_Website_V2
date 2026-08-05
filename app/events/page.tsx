@@ -84,7 +84,7 @@ export default async function EventsPage() {
               </p>
             </div>
           ) : (
-            upcomingEvents.map((event, index) => {
+            upcomingEvents.map((event) => {
               const startDate = new Date(event.startDate);
               const endDate = new Date(event.endDate);
               const month = startDate
@@ -154,19 +154,13 @@ export default async function EventsPage() {
                       timeZone: "Pacific/Auckland",
                     })}, ${endTime}`;
 
-              const cardClassName = `relative m-2 flex min-h-[190px] w-[calc(100vw-32px)] items-stretch overflow-hidden rounded-lg bg-[#151515] sm:w-[82vw] md:min-h-40 md:w-[60vw] lg:w-[50vw] ${
-                event.href
-                  ? "border-2 border-[#B1D468]"
-                  : "border-2 border-transparent"
+              const cardClassName = `relative m-2 flex min-h-[190px] w-[calc(100vw-32px)] items-stretch overflow-hidden rounded-lg bg-[#041F26] sm:w-[82vw] md:min-h-40 md:w-[60vw] lg:w-[50vw] ${
+                event.href ? "border-2 border-[#0B5360]" : "border-0"
               }`;
 
               const cardContent = (
                 <>
-                  <div
-                    className={`flex w-[28%] min-w-[88px] max-w-[116px] shrink-0 flex-col items-center justify-center px-2 py-4 md:w-[20%] md:max-w-none md:px-4 ${
-                      index === 0 ? "bg-[#16865F]" : "bg-[#0A6245]"
-                    }`}
-                  >
+                  <div className="flex w-[28%] min-w-[88px] max-w-[116px] shrink-0 flex-col items-center justify-center bg-[#041F26] px-2 py-4 md:w-[20%] md:max-w-none md:px-4">
                     <h2 className="max-w-full text-center font-boxel text-[clamp(16px,5vw,24px)] leading-none font-bold text-white">
                       {month}
                     </h2>
@@ -178,10 +172,22 @@ export default async function EventsPage() {
                   <div className="flex min-w-0 flex-1 items-center justify-center px-3 py-5 text-center sm:p-5 md:px-6">
                     {event.href && (
                       <span
-                        className="absolute top-3 right-3 text-xl font-bold text-[#B1D468]"
+                        className="absolute top-3 right-3 grid size-8 place-items-center text-[#0B5360]"
                         aria-hidden="true"
                       >
-                        ↗
+                        <svg
+                          className="size-6"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M14 4h6v6" />
+                          <path d="m20 4-9 9" />
+                          <path d="M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5" />
+                        </svg>
                       </span>
                     )}
                     <div className="flex min-w-0 w-full flex-col items-center gap-2">

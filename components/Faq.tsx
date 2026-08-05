@@ -64,7 +64,7 @@ export default function Faq() {
       <div className="mx-auto max-w-[1450px]">
         <motion.h2
           id="faq-heading"
-          className="mb-[clamp(34px,5vw,64px)] text-center font-boxel text-[clamp(64px,8vw,112px)] leading-[.8] font-black tracking-[-.06em] uppercase"
+          className="relative z-10 mb-[clamp(34px,5vw,64px)] text-center font-boxel text-[clamp(64px,8vw,112px)] leading-[.8] font-black tracking-[-.06em] uppercase"
           data-mobile-static="true"
           initial={animationsDisabled ? false : { opacity: 0 }}
           whileInView={animationsDisabled ? undefined : { opacity: 1 }}
@@ -74,43 +74,49 @@ export default function Faq() {
           FAQ
         </motion.h2>
 
-        <motion.div
-          className="grid grid-cols-3 items-start gap-[clamp(28px,5vw,76px)] max-[760px]:grid-cols-1 max-[760px]:gap-14"
-          data-mobile-static="true"
-          initial={animationsDisabled ? false : "hidden"}
-          whileInView={animationsDisabled ? undefined : "visible"}
-          viewport={{ once: false, amount: 0.25 }}
-          variants={{
-            hidden: {},
-            visible: {
-              transition: {
-                staggerChildren: 0.22,
-              },
-            },
-          }}
-        >
-          {faqs.map((faq) => (
-            <motion.article
-              className="text-center"
-              data-mobile-static="true"
-              key={faq.question}
-              variants={{
-                hidden: { opacity: 0 },
-                visible: {
-                  opacity: 1,
-                  transition: { duration: 0.7 },
+        <div className="relative z-0">
+          <div
+            className="pointer-events-none absolute -inset-x-[clamp(24px,7vw,110px)] -inset-y-[clamp(36px,5vw,72px)] bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,.98)_0%,rgba(255,255,255,.96)_48%,rgba(255,255,255,.72)_70%,rgba(255,255,255,.3)_84%,transparent_100%)]"
+            aria-hidden="true"
+          />
+          <motion.div
+            className="relative grid grid-cols-3 items-start gap-[clamp(28px,5vw,76px)] max-[760px]:grid-cols-1 max-[760px]:gap-14"
+            data-mobile-static="true"
+            initial={animationsDisabled ? false : "hidden"}
+            whileInView={animationsDisabled ? undefined : "visible"}
+            viewport={{ once: false, amount: 0.25 }}
+            variants={{
+              hidden: {},
+              visible: {
+                transition: {
+                  staggerChildren: 0.22,
                 },
-              }}
-            >
-              <h3 className="mb-5 text-[clamp(24px,2.4vw,34px)] leading-[1.12] font-medium tracking-[-.025em]">
-                {faq.question}
-              </h3>
-              <p className="mx-auto max-w-[390px] text-[clamp(17px,1.45vw,21px)] leading-[1.45]">
-                {faq.answer}
-              </p>
-            </motion.article>
-          ))}
-        </motion.div>
+              },
+            }}
+          >
+            {faqs.map((faq) => (
+              <motion.article
+                className="text-center"
+                data-mobile-static="true"
+                key={faq.question}
+                variants={{
+                  hidden: { opacity: 0 },
+                  visible: {
+                    opacity: 1,
+                    transition: { duration: 0.7 },
+                  },
+                }}
+              >
+                <h3 className="mb-5 text-[clamp(24px,2.4vw,34px)] leading-[1.12] font-medium tracking-[-.025em]">
+                  {faq.question}
+                </h3>
+                <p className="mx-auto max-w-[390px] text-[clamp(17px,1.45vw,21px)] leading-[1.45]">
+                  {faq.answer}
+                </p>
+              </motion.article>
+            ))}
+          </motion.div>
+        </div>
 
         <motion.div
           className="relative mx-auto mt-[clamp(60px,8vw,100px)] flex h-[clamp(280px,30vw,400px)] max-w-[1200px] items-center justify-between gap-[clamp(18px,3vw,48px)] max-[760px]:mt-16 max-[760px]:h-[230px]"
@@ -165,35 +171,35 @@ export default function Faq() {
               unoptimized
             />
             <a
-              className="absolute top-[1%] left-[4%] h-[23%] w-[20%] rounded-2xl outline-none focus-visible:ring-4 focus-visible:ring-[#B1D468]"
+              className="absolute top-[1%] left-[4%] h-[23%] w-[20%] rounded-2xl outline-none focus-visible:ring-4 focus-visible:ring-[#17DFB4]"
               href="https://www.instagram.com/uoagdg/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GDG on Instagram"
             />
             <a
-              className="absolute top-[1%] right-[1%] h-[24%] w-[22%] rounded-2xl outline-none focus-visible:ring-4 focus-visible:ring-[#B1D468]"
+              className="absolute top-[1%] right-[1%] h-[24%] w-[22%] rounded-2xl outline-none focus-visible:ring-4 focus-visible:ring-[#17DFB4]"
               href="https://www.youtube.com/channel/UCiwPc3JSk--DZmBnUDP4eeg"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GDG on YouTube"
             />
             <a
-              className="absolute top-[28%] left-[34%] h-[47%] w-[34%] rounded-2xl outline-none focus-visible:ring-4 focus-visible:ring-[#B1D468]"
+              className="absolute top-[28%] left-[34%] h-[47%] w-[34%] rounded-2xl outline-none focus-visible:ring-4 focus-visible:ring-[#17DFB4]"
               href="https://discord.com/invite/cnmjh8NQDT"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Join the GDG Discord"
             />
             <a
-              className="absolute top-[35%] right-0 h-[28%] w-[21%] rounded-2xl outline-none focus-visible:ring-4 focus-visible:ring-[#B1D468]"
+              className="absolute top-[35%] right-0 h-[28%] w-[21%] rounded-2xl outline-none focus-visible:ring-4 focus-visible:ring-[#17DFB4]"
               href="https://drive.google.com/drive/folders/1kHfv8UXbKuWpPqWyolEuCuUhauK3m11E"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GDG Google Drive"
             />
             <a
-              className="absolute bottom-0 left-[5%] h-[24%] w-[20%] rounded-2xl outline-none focus-visible:ring-4 focus-visible:ring-[#B1D468]"
+              className="absolute bottom-0 left-[5%] h-[24%] w-[20%] rounded-2xl outline-none focus-visible:ring-4 focus-visible:ring-[#17DFB4]"
               href="https://www.facebook.com/UoAGDG/"
               target="_blank"
               rel="noopener noreferrer"

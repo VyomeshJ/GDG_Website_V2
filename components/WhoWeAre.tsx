@@ -10,7 +10,7 @@ export default function WhoWeAre() {
       />
       <FadeInContent className="relative z-10 grid min-h-[calc(88svh-clamp(152px,18vw,240px))] grid-cols-[minmax(0,1.05fr)_minmax(320px,.95fr)] items-center gap-[clamp(38px,6vw,96px)] max-[760px]:grid-cols-1 max-[760px]:gap-6">
         <div className="max-w-[700px]">
-          <p className="mb-[13px] text-[clamp(11px,1.25vw,16px)] font-black tracking-[.08em] text-[#10b8b5] uppercase">Est. 2018</p>
+          <p className="mb-[13px] text-[clamp(11px,1.25vw,16px)] font-black tracking-[.08em] text-[#17DFB4] uppercase">Est. 2018</p>
           <h2 className="mb-[18px] font-boxel text-[clamp(54px,8vw,112px)] leading-[.9] font-black tracking-[-.065em] uppercase">Intro</h2>
 
           <p className="mb-[19px] max-w-[660px] text-[clamp(17px,1.7vw,23px)] leading-[1.38]">The University of Auckland Game Developers Guild is an inclusive community dedicated to teaching students and hobbyists the core aspects of game development.</p>
