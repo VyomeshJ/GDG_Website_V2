@@ -16,7 +16,7 @@ export default function Trailer() {
         className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[clamp(120px,14vw,200px)] bg-[linear-gradient(to_bottom,#fff_0%,rgba(255,255,255,.82)_22%,rgba(255,255,255,.38)_50%,rgba(255,255,255,.08)_76%,#000_100%)]"
         aria-hidden="true"
       />
-      <div className="relative mx-auto max-w-[900px]">
+      <div className="ultrawide-trailer-container relative mx-auto max-w-[900px]">
         <motion.h2
           id="trailer-heading"
           className="mb-[clamp(32px,4vw,48px)] text-center font-boxel text-[clamp(46px,6vw,82px)] leading-[.85] font-black tracking-[-.055em] uppercase"

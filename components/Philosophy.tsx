@@ -99,7 +99,7 @@ export default function Philosophy() {
         ))}
       </div>
 
-      <div className="relative z-10 mx-auto flex min-h-[620px] max-w-[860px] items-center justify-center max-[760px]:min-h-[730px]">
+      <div className="ultrawide-philosophy-content relative z-10 mx-auto flex min-h-[620px] max-w-[860px] items-center justify-center max-[760px]:min-h-[730px]">
         <motion.article
           className="flex min-h-[460px] flex-col justify-center rounded-[18px] bg-white/90 p-[clamp(26px,3.5vw,46px)] text-center shadow-[0_18px_60px_rgba(0,0,0,.12)] backdrop-blur-[3px] max-[760px]:min-h-[540px]"
           data-mobile-static-transform="true"

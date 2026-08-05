@@ -134,7 +134,7 @@ export default function Navbar({ flat = false }: { flat?: boolean }) {
         aria-hidden="true"
       />
       <nav aria-label="Main navigation">
-        <div className="mx-auto hidden w-full max-w-[920px] grid-cols-[1fr_auto_1fr] items-center gap-7 min-[761px]:grid">
+        <div className="ultrawide-navbar mx-auto hidden w-full max-w-[920px] grid-cols-[1fr_auto_1fr] items-center gap-7 min-[761px]:grid">
           <div className="flex justify-end gap-[clamp(18px,3vw,42px)]">
             {navigation.slice(0, 2).map((item) => (
               <button

@@ -65,7 +65,7 @@ export default function GamesCatalog() {
   return (
     <>
       <section className="pt-40 relative bg-black px-[clamp(20px,5vw,72px)] py-[clamp(48px,6vw,82px)] text-ink">
-        <div className="mx-auto max-w-[1450px]">
+        <div className="ultrawide-games-container mx-auto max-w-[1450px]">
           <div className="mb-10 overflow-hidden rounded-[18px] border-2 border-white/10 bg-[#151515] shadow-[0_18px_50px_rgba(0,0,0,.35)]">
             <div className="flex flex-col gap-5 bg-[#151515] p-[clamp(20px,3vw,34px)] text-white">
               <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
@@ -145,7 +145,7 @@ export default function GamesCatalog() {
           </div>
 
           {filteredGames.length > 0 ? (
-            <div className="grid grid-cols-1 gap-[clamp(20px,2.5vw,34px)] sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div className="ultrawide-games-grid grid grid-cols-1 gap-[clamp(20px,2.5vw,34px)] sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {filteredGames.map((game) => (
                 <a
                   className="group flex min-h-[490px] flex-col overflow-hidden rounded-[16px] border-2 border-white/10 bg-[#151515] text-white shadow-[0_14px_35px_rgba(0,0,0,.35)] transition-transform duration-200 ease-out hover:-translate-y-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white motion-reduce:transform-none motion-reduce:transition-none"

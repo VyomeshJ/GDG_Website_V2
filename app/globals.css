@@ -60,3 +60,93 @@ body {
     will-change: auto !important;
   }
 }
+
+@media (min-width: 1920px) and (min-aspect-ratio: 21/10) {
+  .ultrawide-navbar {
+    max-width: 1180px;
+  }
+
+  .ultrawide-navbar > div {
+    gap: 56px;
+  }
+
+  .ultrawide-navbar button {
+    font-size: 14px;
+  }
+
+  .ultrawide-hero-copy {
+    left: max(7vw, calc((100vw - 2200px) / 2 + 100px));
+    max-width: 900px;
+  }
+
+  .ultrawide-hero-copy h1 {
+    font-size: clamp(84px, 4vw, 100px);
+    line-height: 0.92;
+  }
+
+  .ultrawide-hero-copy > p {
+    font-size: 17px;
+  }
+
+  .ultrawide-hero-actions {
+    gap: 16px;
+  }
+
+  .ultrawide-hero-actions > button,
+  .ultrawide-hero-actions > a,
+  .ultrawide-hero-actions picture,
+  .ultrawide-hero-actions img {
+    width: 190px;
+    height: 84px;
+  }
+
+  .ultrawide-home-wide {
+    width: 100%;
+    max-width: 1800px;
+    margin-inline: auto;
+  }
+
+  .ultrawide-arcade-controller {
+    max-width: 400px;
+  }
+
+  .ultrawide-philosophy-content {
+    max-width: 1100px;
+  }
+
+  .ultrawide-philosophy-content > article {
+    min-height: 500px;
+  }
+
+  .ultrawide-faq-container {
+    max-width: 1800px;
+  }
+
+  .ultrawide-faq-container article p {
+    max-width: 450px;
+  }
+
+  .ultrawide-social-row {
+    max-width: 1450px;
+  }
+
+  .ultrawide-trailer-container {
+    max-width: 1200px;
+  }
+
+  .ultrawide-games-container {
+    max-width: 2200px;
+  }
+
+  .ultrawide-games-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .ultrawide-event-card {
+    width: min(54vw, 1200px);
+  }
+
+  .ultrawide-footer {
+    max-width: 1900px;
+  }
+}

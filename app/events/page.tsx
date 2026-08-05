@@ -154,7 +154,7 @@ export default async function EventsPage() {
                       timeZone: "Pacific/Auckland",
                     })}, ${endTime}`;
 
-              const cardClassName = `relative m-2 flex min-h-[190px] w-[calc(100vw-32px)] items-stretch overflow-hidden rounded-lg bg-[#041F26] sm:w-[82vw] md:min-h-40 md:w-[60vw] lg:w-[50vw] ${
+              const cardClassName = `ultrawide-event-card relative m-2 flex min-h-[190px] w-[calc(100vw-32px)] items-stretch overflow-hidden rounded-lg bg-[#041F26] sm:w-[82vw] md:min-h-40 md:w-[60vw] lg:w-[50vw] ${
                 event.href ? "border-2 border-[#0B5360]" : "border-0"
               }`;
 

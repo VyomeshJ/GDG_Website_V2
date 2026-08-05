@@ -11,7 +11,7 @@ import { useRef } from "react";
 import useAnimationsDisabled from "@/hooks/useAnimationsDisabled";
 
 const containerClassName =
-  "relative aspect-[197/240] w-full max-w-[320px] max-[760px]:w-[min(62vw,240px)]";
+  "ultrawide-arcade-controller relative aspect-[197/240] w-full max-w-[320px] max-[760px]:w-[min(62vw,240px)]";
 
 function JoystickImage() {
   return (

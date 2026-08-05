@@ -29,10 +29,10 @@ export default function Hero() {
           aria-hidden="true"
         />
       </div>
-      <div className="absolute top-[51%] left-[clamp(24px,9vw,140px)] z-2 max-w-[640px] -translate-y-[35%] max-[760px]:top-[64%] max-[760px]:right-6 max-[760px]:translate-y-0">
+      <div className="ultrawide-hero-copy absolute top-[51%] left-[clamp(24px,9vw,140px)] z-2 max-w-[640px] -translate-y-[35%] max-[760px]:top-[64%] max-[760px]:right-6 max-[760px]:translate-y-0">
         <p className="mb-[13px] text-[clamp(11px,1.25vw,16px)] font-black tracking-[.08em] text-[#17DFB4] uppercase">Auckland Uni&apos;s Game Dev Club</p>
         <h1 className="m-0 font-boxel text-[clamp(33.6px,5.6vw,80px)] leading-[.9] font-black tracking-[-.02em]">Game Developer Guild!</h1>
-        <div className="mt-6 flex gap-3 max-[360px]:flex-col">
+        <div className="ultrawide-hero-actions mt-6 flex gap-3 max-[360px]:flex-col">
           <button
             className="group grid h-19 w-43 cursor-pointer max-[760px]:h-16 max-[760px]:w-[145px]"
             type="button"

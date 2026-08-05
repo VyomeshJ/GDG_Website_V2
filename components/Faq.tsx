@@ -61,7 +61,7 @@ export default function Faq() {
         aria-hidden="true"
       />
 
-      <div className="mx-auto max-w-[1450px]">
+      <div className="ultrawide-faq-container mx-auto max-w-[1450px]">
         <motion.h2
           id="faq-heading"
           className="relative z-10 mb-[clamp(34px,5vw,64px)] text-center font-boxel text-[clamp(64px,8vw,112px)] leading-[.8] font-black tracking-[-.06em] uppercase"
@@ -119,7 +119,7 @@ export default function Faq() {
         </div>
 
         <motion.div
-          className="relative mx-auto mt-[clamp(60px,8vw,100px)] flex h-[clamp(280px,30vw,400px)] max-w-[1200px] items-center justify-between gap-[clamp(18px,3vw,48px)] max-[760px]:mt-16 max-[760px]:h-[230px]"
+          className="ultrawide-social-row relative mx-auto mt-[clamp(60px,8vw,100px)] flex h-[clamp(280px,30vw,400px)] max-w-[1200px] items-center justify-between gap-[clamp(18px,3vw,48px)] max-[760px]:mt-16 max-[760px]:h-[230px]"
           data-mobile-static="true"
           initial={animationsDisabled ? false : "hidden"}
           whileInView={animationsDisabled ? undefined : "visible"}
