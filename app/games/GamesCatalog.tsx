@@ -121,13 +121,13 @@ export default function GamesCatalog() {
             </div>
 
             <div className="border-t border-white/12 pt-5">
-              <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
-                <span className="text-sm font-black tracking-[.08em] py-1.5 text-white/55 uppercase">
+              <div className="mb-3 flex flex-wrap items-center gap-3 min-h-11 justify-between">
+                <span className="text-sm font-black tracking-[.08em] py-1.8 text-white/55 uppercase">
                   Filter by Game Jam
                 </span>
                 {selectedJams.length > 0 && (
                   <button
-                    className="cursor-pointer rounded-[7px] border border-white/20 px-3 py-1.5 text-sm font-black text-white/65 transition-colors hover:border-[#17DFB4] hover:text-[#17DFB4]"
+                    className="cursor-pointer rounded-[7px] border-2 border-white/20 px-3 py-1.5 text-sm font-black text-white/65 transition-colors hover:border-[#17DFB4] hover:text-[#17DFB4]"
                     type="button"
                     onClick={() => setSelectedJams([])}
                   >
@@ -140,7 +140,7 @@ export default function GamesCatalog() {
                   const selected = selectedJams.includes(jam);
                   return (
                     <button
-                      className={`cursor-pointer rounded-full border px-3 py-1.5 text-xs font-bold transition-colors bg-white/5 ${
+                      className={`cursor-pointer rounded-full border-2 px-3 py-1.5 text-xs font-bold transition-colors bg-white/5 ${
                         selected
                           ? "border-gdg-highlight text-gdg-highlight"
                           : "border-white/15 text-white/65 hover:border-gdg-highlight/50 hover:text-gdg-highlight/65"
