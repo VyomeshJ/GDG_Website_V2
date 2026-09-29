@@ -846,5 +846,67 @@
     "author": "Proton & Rhaskia",
     "publishedAt": "2022-10-02",
     "tags": ["2022 Jam 3", "3D", "Horror", "Singleplayer", "Unity"]
+  },
+  {
+    "title": "you aren't really there",
+    "href": "https://finn25.itch.io/you-arent-really-there",
+    "image": "https://img.itch.zone/aW1nLzMwMTY0ODU3LnBuZw==/315x250%23c/ymBRRb.png",
+    "description": "A short story about how people perceive you, will you give in to your reflection?",
+    "author": "Finn, Kisaragi",
+    "publishedAt": "2026-09-24",
+    "tags": [
+      "2026 Jam 2",
+      "2D",
+      "Game Boy",
+      "Indie",
+      "No AI",
+      "Retro",
+      "Story Rich"
+    ]
+  },
+  {
+    "title": "MuseumNight",
+    "href": "https://psheng0917.itch.io/museumnight",
+    "image": "",
+    "description": "",
+    "author": "Psheng0917",
+    "publishedAt": "2026-09-28",
+    "tags": ["2026 Jam 2", "2D", "Pixel Art", "Singleplayer"]
+  },
+  {
+    "title": "Shields Up",
+    "href": "https://bottlebrush.itch.io/shieldsup",
+    "image": "https://img.itch.zone/aW1nLzMwMzIwMDkzLnBuZw==/300x240%23c/7kvUoy.png",
+    "description": "Your ship is outfitted with a high-tech energy field that reflects bullets. Use it to wreak havoc on the biggest, most powerful fleets of the galaxy.",
+    "author": "BottleBrush",
+    "publishedAt": "2026-09-03",
+    "tags": ["2026 Jam 2", "Action", "Shooter", "Shoot 'Em Up", "Space"]
+  },
+  {
+    "title": "Pauliana's Decision",
+    "href": "https://gpeng.itch.io/paulianas-decision",
+    "image": "https://img.itch.zone/aW1nLzMwMjk2NTI5LnBuZw==/315x250%23c/SLdz%2Fi.png",
+    "description": "Make your decisions and get ready, I’m heading to you ASAP, we need to act quickly—you’ve seen the intelligence reports? They’re going to invade.",
+    "author": "Ghostpengi",
+    "publishedAt": "2026-09-28",
+    "tags": ["2026 Jam 2", "Visual Novel", "Prototype"]
+  },
+  {
+    "title": "Fractual Memory",
+    "href": "https://cheapmousepad.itch.io/gdg-game-jam-fractual-memory",
+    "image": "",
+    "description": "Inspired by card games like slay the spire, where you have no attacks and have to reflect enemy damage. Reflected damage isn't also blocked, so these cards need to be played separately.",
+    "author": "Cheapmousepad",
+    "publishedAt": "2026-09-28",
+    "tags": ["2026 Jam 2", "Card Game"]
+  },
+  {
+    "title": "Reverb",
+    "href": "https://bogger12.itch.io/reverb",
+    "image": "",
+    "description": "A puzzle game centered around sound.",
+    "author": "bogger12",
+    "publishedAt": "2026-09-28",
+    "tags": ["2026 Jam 2", "Unity", "Puzzle"]
   }
 ]

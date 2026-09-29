@@ -20,6 +20,7 @@ type SortMode = "default" | "newest" | "oldest";
 
 const games = gamesData as Game[];
 const allJams = [
+  "2026 Jam 2",
   "2026 Jam 1",
   "2025 Jam 2",
   "2025 Jam 1",
