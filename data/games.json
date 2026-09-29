@@ -7,11 +7,7 @@
     "author": "UoAGDG",
     "genre": "Simulation",
     "publishedAt": "2024-04-19",
-    "tags": [
-      "2D",
-      "Horror",
-      "Simple"
-    ]
+    "tags": ["2024 Jam 1", "2D", "Horror", "Simple"]
   },
   {
     "title": "Solace",
@@ -20,11 +16,7 @@
     "author": "ItsMaddieNow",
     "genre": "Puzzle",
     "publishedAt": "2024-11-12",
-    "tags": [
-      "3D",
-      "Godot",
-      "Indie"
-    ]
+    "tags": ["2024 Jam 2", "3D", "Godot", "Indie"]
   },
   {
     "title": "Unnamed Cat(s) Game",
@@ -36,6 +28,7 @@
     "playable": true,
     "publishedAt": "2026-04-21",
     "tags": [
+      "2025 Jam 2",
       "2D",
       "Cats",
       "No AI",
@@ -53,6 +46,7 @@
     "genre": "Platformer",
     "publishedAt": "2025-09-22",
     "tags": [
+      "2025 Jam 2",
       "2D",
       "Atmospheric",
       "Fantasy",
@@ -68,10 +62,7 @@
     "author": "Cyuni",
     "genre": "Action",
     "publishedAt": "2025-09-22",
-    "tags": [
-      "2D",
-      "Comedy"
-    ]
+    "tags": ["2025 Jam 2", "2D", "Comedy"]
   },
   {
     "title": "🧾Tales Of Tan🧾",
@@ -81,9 +72,7 @@
     "author": "Foosnail",
     "genre": "Action",
     "publishedAt": "2025-09-20",
-    "tags": [
-      "storygame"
-    ]
+    "tags": ["Other", "storygame"]
   },
   {
     "title": "Crash & Crawl",
@@ -92,13 +81,7 @@
     "author": "Last Minute Enjoyers",
     "genre": "Action",
     "publishedAt": "2026-04-28",
-    "tags": [
-      "2D",
-      "No AI",
-      "Pixel Art",
-      "Vehicles",
-      "Zombies"
-    ]
+    "tags": ["2025 Jam 1", "2D", "No AI", "Pixel Art", "Vehicles", "Zombies"]
   },
   {
     "title": "Time Crash",
@@ -106,10 +89,7 @@
     "author": "viscoelasticity",
     "genre": "Puzzle",
     "publishedAt": "2025-05-05",
-    "tags": [
-      "Pixel Art",
-      "Singleplayer"
-    ]
+    "tags": ["2025 Jam 1", "Pixel Art", "Singleplayer"]
   },
   {
     "title": "RamRaiderz",
@@ -120,7 +100,7 @@
     "genre": "Action",
     "playable": true,
     "publishedAt": "2025-05-05",
-    "tags": []
+    "tags": ["2025 Jam 1"]
   },
   {
     "title": "Crash Out!",
@@ -130,12 +110,7 @@
     "author": "k1w1fru1t",
     "genre": "Visual Novel",
     "publishedAt": "2025-05-05",
-    "tags": [
-      "No AI",
-      "Pixel Art",
-      "Ren'Py",
-      "Singleplayer"
-    ]
+    "tags": ["2025 Jam 1", "No AI", "Pixel Art", "Ren'Py", "Singleplayer"]
   },
   {
     "title": "Dislodged",
@@ -146,10 +121,7 @@
     "genre": "Platformer",
     "playable": true,
     "publishedAt": "2025-05-05",
-    "tags": [
-      "16x16",
-      "2D"
-    ]
+    "tags": ["2025 Jam 1", "16x16", "2D"]
   },
   {
     "title": "C.R.A.S.H",
@@ -160,6 +132,7 @@
     "genre": "Action",
     "publishedAt": "2025-05-04",
     "tags": [
+      "2025 Jam 1",
       "3D",
       "Doom",
       "First-Person",
@@ -178,6 +151,7 @@
     "genre": "Action",
     "publishedAt": "2025-05-03",
     "tags": [
+      "2025 Jam 1",
       "4d",
       "Aseprite",
       "Bullet Hell",
@@ -198,7 +172,7 @@
     "genre": "Adventure",
     "publishedAt": "2025-05-03",
     "playable": true,
-    "tags": []
+    "tags": ["2025 Jam 1"]
   },
   {
     "title": "Code Blue",
@@ -210,6 +184,7 @@
     "playable": true,
     "publishedAt": "2025-05-03",
     "tags": [
+      "2025 Jam 1",
       "2D",
       "My First Game Jam",
       "No AI",
@@ -227,12 +202,10 @@
     "description": "One tip: Don't Crash",
     "publishedAt": "2025-05-01",
     "author": "DenPs",
-    "tags": [
-      "Roguelike"
-    ]
+    "tags": ["2025 Jam 1", "Roguelike"]
   },
   {
-    "title": "GooGooGaGone",
+    "title": "Goo Goo Ga Gone",
     "href": "https://sekrets.itch.io/googoogagone",
     "image": "https://img.itch.zone/aW1nLzIwMzI1ODQ2LnBuZw==/315x250%23c/1ZTETi.png",
     "description": "Crash into babies from the comfort of your own home!",
@@ -241,6 +214,7 @@
     "publishedAt": "2025-03-18",
     "playable": true,
     "tags": [
+      "2025 Jam 1",
       "Arcade",
       "Driving",
       "Endless",
@@ -260,7 +234,7 @@
     "genre": "Visual Novel",
     "publishedAt": "2025-01-26",
     "playable": true,
-    "tags": []
+    "tags": ["2025 Jam 1"]
   },
   {
     "title": "Maw, Meat and Madness",
@@ -272,6 +246,7 @@
     "playable": true,
     "publishedAt": "2025-02-02",
     "tags": [
+      "2025 Jam 1",
       "Asteroids",
       "Bullet Hell",
       "Gravity",
@@ -281,7 +256,7 @@
     ]
   },
   {
-    "title": "station.block",
+    "title": "Station.block",
     "href": "https://dragonmoffon.itch.io/station-block",
     "image": "https://img.itch.zone/aW1nLzIxMDgzMzgwLnBuZw==/315x250%23c/TdPbq8.png",
     "description": "build out programs to repair the stations logic",
@@ -289,6 +264,7 @@
     "genre": "Puzzle",
     "publishedAt": "2025-05-05",
     "tags": [
+      "2025 Jam 1",
       "2D",
       "No AI",
       "Pixel Art",
@@ -305,12 +281,7 @@
     "author": "Janer567",
     "genre": "Role Playing",
     "publishedAt": "2025-05-12",
-    "tags": [
-      "2D",
-      "Pixel Art",
-      "Story Rich",
-      "Undertale"
-    ]
+    "tags": ["2025 Jam 1", "2D", "Pixel Art", "Story Rich", "Undertale"]
   },
   {
     "title": "Chrono",
@@ -320,10 +291,7 @@
     "author": "DragonMoffon",
     "genre": "Platformer",
     "publishedAt": "2024-09-16",
-    "tags": [
-      "2D",
-      "Time Travel"
-    ]
+    "tags": ["2024 Jam 2", "2D", "Time Travel"]
   },
   {
     "title": "The Last Rat",
@@ -333,10 +301,7 @@
     "author": "Korny",
     "genre": "Action",
     "publishedAt": "2026-05-04",
-    "tags": [
-      "Cats",
-      "Vampire"
-    ]
+    "tags": ["2026 Jam 1", "Cats", "Vampire"]
   },
   {
     "title": "Catsle Knights",
@@ -347,6 +312,7 @@
     "genre": "Action",
     "publishedAt": "2026-05-04",
     "tags": [
+      "2026 Jam 1",
       "2D",
       "Cats",
       "Godot",
@@ -365,6 +331,7 @@
     "genre": "Visual Novel",
     "publishedAt": "2026-05-03",
     "tags": [
+      "2026 Jam 1",
       "2D",
       "Cats",
       "Cozy",
@@ -382,7 +349,7 @@
     "author": "TheSKBrooook",
     "genre": "Interactive Fiction",
     "publishedAt": "2026-05-04",
-    "tags": []
+    "tags": ["2026 Jam 1"]
   },
   {
     "title": "The Rat's End",
@@ -392,13 +359,7 @@
     "author": "tabyrocket",
     "genre": "Action, Survival",
     "publishedAt": "2026-05-03",
-    "tags": [
-      "3D",
-      "Cats",
-      "Dystopian",
-      "Godot",
-      "Souls-like"
-    ]
+    "tags": ["2026 Jam 1", "3D", "Cats", "Dystopian", "Godot", "Souls-like"]
   },
   {
     "title": "TURBOCATS",
@@ -409,12 +370,7 @@
     "genre": "Strategy, Role Playing, Shooter",
     "playable": true,
     "publishedAt": "2026-05-02",
-    "tags": [
-      "2D",
-      "Cats",
-      "Crafting",
-      "Tower Defense"
-    ]
+    "tags": ["2026 Jam 1", "2D", "Cats", "Crafting", "Tower Defense"]
   },
   {
     "title": "One Rat Army",
@@ -423,9 +379,7 @@
     "genre": "Shooter",
     "playable": true,
     "publishedAt": "2026-05-03",
-    "tags": [
-      "2D"
-    ]
+    "tags": ["2026 Jam 1", "2D"]
   },
   {
     "title": "Plague Crusade",
@@ -434,12 +388,10 @@
     "author": "NinjaKing",
     "genre": "Action",
     "publishedAt": "2023-05-06",
-    "tags": [
-      "Action"
-    ]
+    "tags": ["2023 Jam 1", "Action"]
   },
   {
-    "title": "ring_zero",
+    "title": "Ring_Zero",
     "href": "https://xnopytagameing.itch.io/ring-zero",
     "image": "https://img.itch.zone/aW1nLzEyMTAxMTk5LnBuZw==/315x250%23c/klPMFh.png",
     "description": "A fast-paced arcade shooter where you shoot alien creatures",
@@ -447,12 +399,7 @@
     "genre": "Action",
     "playable": true,
     "publishedAt": "2023-05-07",
-    "tags": [
-      "2D",
-      "Arcade",
-      "Pixel Art",
-      "Retro"
-    ]
+    "tags": ["2023 Jam 1", "2D", "Arcade", "Pixel Art", "Retro"]
   },
   {
     "title": "ChessGPT",
@@ -463,6 +410,7 @@
     "genre": "Strategy",
     "publishedAt": "2023-05-07",
     "tags": [
+      "2023 Jam 1",
       "artificial-intelligence",
       "Chess",
       "Cute",
@@ -472,11 +420,11 @@
     ]
   },
   {
-    "title": "Boss Figher",
+    "title": "Boss Fighter",
     "href": "https://gabriel-555.itch.io/boss-fighter",
     "author": "gabriel_555",
     "publishedAt": "2023-05-08",
-    "tags": []
+    "tags": ["2023 Jam 1"]
   },
   {
     "title": "Karma Kameleon",
@@ -486,6 +434,7 @@
     "author": "KarmaKameleon",
     "publishedAt": "2023-05-08",
     "tags": [
+      "2023 Jam 1",
       "2D",
       "Arcade",
       "Cute",
@@ -505,10 +454,7 @@
     "author": "Ferox",
     "genre": "Action, Adventure",
     "publishedAt": "2023-09-18",
-    "tags": [
-      "2D",
-      "Pixel Art"
-    ]
+    "tags": ["2023 Jam 2", "2D", "Pixel Art"]
   },
   {
     "title": "The Temple",
@@ -519,9 +465,7 @@
     "genre": "Puzzle",
     "playable": true,
     "publishedAt": "2023-09-18",
-    "tags": [
-      "Puzzle"
-    ]
+    "tags": ["2023 Jam 2", "Puzzle"]
   },
   {
     "title": "Foretold",
@@ -529,26 +473,7 @@
     "author": "bogger12",
     "genre": "Platformer",
     "publishedAt": "2023-09-18",
-    "tags": [
-      "Platformer"
-    ]
-  },
-  {
-    "title": "Don't Let Them Escape, We Must Consume",
-    "href": "https://toast-co.itch.io/dont-let-them-escape-we-must-consume",
-    "image": "https://img.itch.zone/aW1nLzE1ODE1ODE4LnBuZw==/315x250%23c/8%2FlH66.png",
-    "description": "We hunger for flesh so we must pull our victims into our body.",
-    "author": "Toast Co.",
-    "genre": "Survival",
-    "publishedAt": "2024-04-19",
-    "tags": [
-      "2D",
-      "Arcade",
-      "Creepy",
-      "Horror",
-      "Short",
-      "Singleplayer"
-    ]
+    "tags": ["2023 Jam 2", "Platformer"]
   },
   {
     "title": "Anthropophobia",
@@ -557,9 +482,7 @@
     "description": "GDG 2024 Sem1 Gam Jam project",
     "author": "Last Minute Enjoyers",
     "publishedAt": "2024-04-27",
-    "tags": [
-      "Stealth"
-    ]
+    "tags": ["2024 Jam 1", "Stealth"]
   },
   {
     "title": "Rowdy Racers",
@@ -568,9 +491,7 @@
     "author": "Greywell",
     "genre": "Action",
     "publishedAt": "2024-04-28",
-    "tags": [
-      "Action"
-    ]
+    "tags": ["2024 Jam 1", "Action"]
   },
   {
     "title": "Escape Dream",
@@ -579,9 +500,7 @@
     "author": "311132141",
     "genre": "Platformer",
     "publishedAt": "2024-04-29",
-    "tags": [
-      "2D"
-    ]
+    "tags": ["2024 Jam 1", "2D"]
   },
   {
     "title": "Memento Marine",
@@ -593,6 +512,7 @@
     "playable": true,
     "publishedAt": "2024-04-29",
     "tags": [
+      "2024 Jam 1",
       "2D",
       "Atmospheric",
       "Exploration",
@@ -610,7 +530,7 @@
     "genre": "Platformer",
     "playable": true,
     "publishedAt": "2024-04-29",
-    "tags": []
+    "tags": ["2024 Jam 1"]
   },
   {
     "title": "Turnbased Tactics",
@@ -619,7 +539,7 @@
     "description": "Top-down turn-based strategy game",
     "author": "NinjaKing",
     "publishedAt": "2024-04-29",
-    "tags": []
+    "tags": ["2024 Jam 1"]
   },
   {
     "title": "Illuminal",
@@ -630,6 +550,7 @@
     "genre": "Puzzle",
     "publishedAt": "2024-04-29",
     "tags": [
+      "2024 Jam 1",
       "3D",
       "Horror",
       "Liminal space",
@@ -645,6 +566,7 @@
     "genre": "Role Playing, Adventure, Strategy",
     "publishedAt": "2024-09-12",
     "tags": [
+      "2024 Jam 2",
       "Fantasy",
       "Indie",
       "Pixel Art",
@@ -661,6 +583,7 @@
     "genre": "Action",
     "publishedAt": "2024-09-13",
     "tags": [
+      "2024 Jam 2",
       "2D",
       "Boss battle",
       "Narrative",
@@ -676,11 +599,7 @@
     "author": "Mason_Liu_u, Who?, Cipher_Sunwarrior",
     "genre": "Platformer, Action, Puzzle",
     "publishedAt": "2024-09-15",
-    "tags": [
-      "Narrative",
-      "Singleplayer",
-      "Unreal Engine"
-    ]
+    "tags": ["2024 Jam 2", "Narrative", "Singleplayer", "Unreal Engine"]
   },
   {
     "title": "Debasement",
@@ -691,12 +610,7 @@
     "genre": "Visual Novel",
     "playable": true,
     "publishedAt": "2024-09-16",
-    "tags": [
-      "2D",
-      "Game Jam",
-      "Psychological Horror",
-      "Ren'Py"
-    ]
+    "tags": ["2024 Jam 2", "2D", "Game Jam", "Psychological Horror", "Ren'Py"]
   },
   {
     "title": "Reverse Bell",
@@ -706,9 +620,7 @@
     "author": "viscoelasticity",
     "genre": "Adventure",
     "publishedAt": "2024-09-16",
-    "tags": [
-      "Singleplayer"
-    ]
+    "tags": ["2024 Jam 2", "Singleplayer"]
   },
   {
     "title": "The Land Down Under",
@@ -720,6 +632,7 @@
     "playable": true,
     "publishedAt": "2024-09-16",
     "tags": [
+      "2024 Jam 2",
       "2D",
       "Arcade",
       "Bullet Hell",
@@ -738,9 +651,7 @@
     "author": "NinjaKing",
     "genre": "Role Playing",
     "publishedAt": "2024-09-16",
-    "tags": [
-      "Rpg"
-    ]
+    "tags": ["2024 Jam 2", "Rpg"]
   },
   {
     "title": "Nameless King",
@@ -751,9 +662,7 @@
     "genre": "Adventure",
     "playable": true,
     "publishedAt": "2024-09-16",
-    "tags": [
-      "Adventure"
-    ]
+    "tags": ["2024 Jam 2", "Adventure"]
   },
   {
     "title": "Untitled Alien Game",
@@ -765,6 +674,7 @@
     "playable": true,
     "publishedAt": "2025-05-05",
     "tags": [
+      "2025 Jam 1",
       "2D",
       "Aliens",
       "Deck Building",
@@ -782,12 +692,7 @@
     "author": "DigiDuncan",
     "genre": "Action",
     "publishedAt": "2025-09-22",
-    "tags": [
-      "2D",
-      "Bullet Hell",
-      "input-device",
-      "Singleplayer"
-    ]
+    "tags": ["2025 Jam 2", "2D", "Bullet Hell", "input-device", "Singleplayer"]
   },
   {
     "title": "We Are Cooked",
@@ -797,6 +702,7 @@
     "author": "NotATree07, acinine",
     "publishedAt": "2025-09-22",
     "tags": [
+      "2025 Jam 2",
       "18",
       "Godot",
       "minigames",
@@ -814,10 +720,7 @@
     "author": "Vyomesh Jamwal",
     "genre": "Rhythm",
     "publishedAt": "2025-09-22",
-    "tags": [
-      "No Ai",
-      "Rhythm"
-    ]
+    "tags": ["2025 Jam 2", "No Ai", "Rhythm"]
   },
   {
     "title": "Jumping Torch",
@@ -826,10 +729,7 @@
     "author": "viscoelasticity",
     "genre": "Action",
     "publishedAt": "2025-09-22",
-    "tags": [
-      "3D",
-      "jumping"
-    ]
+    "tags": ["2025 Jam 2", "3D", "jumping"]
   },
   {
     "title": "Helping Dad",
@@ -839,9 +739,7 @@
     "author": "Joshuackiwi, TheTrueCoder",
     "genre": "Puzzle",
     "publishedAt": "2025-09-22",
-    "tags": [
-      "Virtual Reality (VR)"
-    ]
+    "tags": ["2025 Jam 2", "Virtual Reality (VR)"]
   },
   {
     "title": "Holy Smokes!",
@@ -852,9 +750,7 @@
     "genre": "Action",
     "playable": true,
     "publishedAt": "2025-09-22",
-    "tags": [
-      "Action"
-    ]
+    "tags": ["2025 Jam 2", "Action"]
   },
   {
     "title": "Mushroom Valley",
@@ -864,26 +760,7 @@
     "genre": "Puzzle",
     "playable": true,
     "publishedAt": "2025-09-22",
-    "tags": [
-      "3D",
-      "Multiplayer"
-    ]
-  },
-  {
-    "title": "Cool Pyramid Quest",
-    "href": "https://tsukeybii.itch.io/cool-pyramid-quest",
-    "image": "https://img.itch.zone/aW1nLzIzMjcxNTE0LnBuZw==/original/i0V9XE.png",
-    "description": "Complete the goal and win the game",
-    "author": "tsukeybii",
-    "genre": "Platformer, Action, Adventure",
-    "publishedAt": "2025-09-22",
-    "tags": [
-      "2D",
-      "Atmospheric",
-      "Fantasy",
-      "Short",
-      "Singleplayer"
-    ]
+    "tags": ["2025 Jam 2", "3D", "Multiplayer"]
   },
   {
     "title": "Cat Game",
@@ -891,18 +768,19 @@
     "image": "https://img.itch.zone/aW1nLzI3MjAxODk1LnBuZw==/315x250%23c/FLjhZJ.png",
     "author": "DenPs",
     "publishedAt": "2026-05-02",
-    "tags": []
+    "tags": ["2026 Jam 1"]
   },
   {
     "title": "Cat Conjurer",
     "href": "https://finn25.itch.io/cat-conjurer",
-    "image": "https://img.itch.zone/aW1nLzI2OTYzNzU0LnBuZw==/315x250%23c/EGG4Pf.png",
+    "image": "https://img.itch.zone/aW1nLzI3NzYzNDgwLnBuZw==/315x250%23c/FmLHjo.png",
     "description": "summon cats by playing cards to slay the evil fruit & vege!",
     "author": "Finn, real_ning",
     "genre": "Action, Card Game",
     "playable": true,
     "publishedAt": "2026-05-03",
     "tags": [
+      "2026 Jam 1",
       "2D",
       "Aseprite",
       "Cats",
@@ -922,9 +800,7 @@
     "genre": "Educational",
     "playable": true,
     "publishedAt": "2026-05-03",
-    "tags": [
-      "Psychological Horror"
-    ]
+    "tags": ["2026 Jam 1", "Psychological Horror"]
   },
   {
     "title": "Catfishing",
@@ -933,11 +809,104 @@
     "description": "unfinished catfishing prototype game",
     "author": "lfon434",
     "publishedAt": "2026-05-04",
+    "tags": ["2026 Jam 1", "Anime", "Cats", "fish", "Fishing"]
+  },
+  {
+    "title": "Rock vs. Smith",
+    "href": "https://noah-lang.itch.io/rockvssmith",
+    "image": "https://img.itch.zone/aW1nLzEwMTgwMTA3LmpwZw==/347x500/ApkxWf.jpg",
+    "description": "A 1st person 3D action game slapping a certain someone from the Oscars (Rock vs. Smith).",
+    "author": "noah_lang",
+    "publishedAt": "2022-10-02",
+    "tags": ["2022 Jam 3"]
+  },
+  {
+    "title": "Ze After Afterparty",
+    "href": "https://joshij10.itch.io/nzgdc-after-afterparty",
+    "image": "https://img.itch.zone/aW1hZ2UvMTcyMzY0Mi8xMDE3OTI0Ni5wbmc=/347x500/y8q6dN.png",
+    "description": "A 2D Puzzle game regaling everyone on what happened during the NZ Game Dev Conference (NZGDC) After Afterparty.",
+    "author": "Joshij10",
+    "publishedAt": "2022-10-02",
+    "tags": ["2022 Jam 3"]
+  },
+  {
+    "title": "Meme Dungeon",
+    "href": "leviathon1618.itch.io/meme-dungeon",
+    "image": "https://img.itch.zone/aW1nLzEyNDEyMzE5LmpwZw==/315x250%23c/3aeQzQ.jpg",
+    "description": "A 2.5D top-down shooter with meme minibosses (think the grim reaper meme but with a hint of Binding of Isaac).",
+    "author": "leviathon1618",
+    "publishedAt": "2022-09-30",
+    "tags": ["2022 Jam 3"]
+  },
+  {
+    "title": "Backrooms Escape",
+    "href": "https://protondev.itch.io/backrooms-escape-demo",
+    "image": "https://img.itch.zone/aW1nLzEwMTc1NzcwLnBuZw==/315x250%23c/TJ019t.png",
+    "description": "A quick demo for a 3D 1st person game where they escape The Backrooms.",
+    "author": "Proton & Rhaskia",
+    "publishedAt": "2022-10-02",
+    "tags": ["2022 Jam 3", "3D", "Horror", "Singleplayer", "Unity"]
+  },
+  {
+    "title": "you aren't really there",
+    "href": "https://finn25.itch.io/you-arent-really-there",
+    "image": "https://img.itch.zone/aW1nLzMwMTY0ODU3LnBuZw==/315x250%23c/ymBRRb.png",
+    "description": "A short story about how people perceive you, will you give in to your reflection?",
+    "author": "Finn, Kisaragi",
+    "publishedAt": "2026-09-24",
     "tags": [
-      "Anime",
-      "Cats",
-      "fish",
-      "Fishing"
+      "2026 Jam 2",
+      "2D",
+      "Game Boy",
+      "Indie",
+      "No AI",
+      "Retro",
+      "Story Rich"
     ]
+  },
+  {
+    "title": "MuseumNight",
+    "href": "https://psheng0917.itch.io/museumnight",
+    "image": "",
+    "description": "",
+    "author": "Psheng0917",
+    "publishedAt": "2026-09-28",
+    "tags": ["2026 Jam 2", "2D", "Pixel Art", "Singleplayer"]
+  },
+  {
+    "title": "Shields Up",
+    "href": "https://bottlebrush.itch.io/shieldsup",
+    "image": "https://img.itch.zone/aW1nLzMwMzIwMDkzLnBuZw==/300x240%23c/7kvUoy.png",
+    "description": "Your ship is outfitted with a high-tech energy field that reflects bullets. Use it to wreak havoc on the biggest, most powerful fleets of the galaxy.",
+    "author": "BottleBrush",
+    "publishedAt": "2026-09-03",
+    "tags": ["2026 Jam 2", "Action", "Shooter", "Shoot 'Em Up", "Space"]
+  },
+  {
+    "title": "Pauliana's Decision",
+    "href": "https://gpeng.itch.io/paulianas-decision",
+    "image": "https://img.itch.zone/aW1nLzMwMjk2NTI5LnBuZw==/315x250%23c/SLdz%2Fi.png",
+    "description": "Make your decisions and get ready, I’m heading to you ASAP, we need to act quickly—you’ve seen the intelligence reports? They’re going to invade.",
+    "author": "Ghostpengi",
+    "publishedAt": "2026-09-28",
+    "tags": ["2026 Jam 2", "Visual Novel", "Prototype"]
+  },
+  {
+    "title": "Fractual Memory",
+    "href": "https://cheapmousepad.itch.io/gdg-game-jam-fractual-memory",
+    "image": "",
+    "description": "Inspired by card games like slay the spire, where you have no attacks and have to reflect enemy damage. Reflected damage isn't also blocked, so these cards need to be played separately.",
+    "author": "Cheapmousepad",
+    "publishedAt": "2026-09-28",
+    "tags": ["2026 Jam 2", "Card Game"]
+  },
+  {
+    "title": "Reverb",
+    "href": "https://bogger12.itch.io/reverb",
+    "image": "",
+    "description": "A puzzle game centered around sound.",
+    "author": "bogger12",
+    "publishedAt": "2026-09-28",
+    "tags": ["2026 Jam 2", "Unity", "Puzzle"]
   }
 ]
